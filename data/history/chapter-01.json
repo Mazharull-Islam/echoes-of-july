@@ -1,0 +1,14 @@
+{
+  "chapter": "chapter-01",
+  "title": "Historical Context",
+  "entries": [
+    {
+      "title": "Background",
+      "content": "Historical explanation..."
+    },
+    {
+      "title": "Aftermath",
+      "content": "More explanation..."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "chapter-01",
+    "date": "16 July 2024",
+    "title": "The Beginning",
+    "summary": "Students begin protesting.",
+    "chapter": "chapter-01"
+  },
+  {
+    "id": "chapter-02",
+    "date": "18 July 2024",
+    "title": "Escalation",
+    "summary": "Placeholder summary.",
+    "chapter": "chapter-02"
+  }
+]

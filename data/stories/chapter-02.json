@@ -1,0 +1,16 @@
+{
+  "id": "chapter-02",
+  "title": "The Beginning",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "speaker": "Narrator",
+      "dialogue": "The protest began early in the morning."
+    },
+    {
+      "id": "scene-2",
+      "speaker": "Student",
+      "dialogue": "We gathered outside the campus."
+    }
+  ]
+}

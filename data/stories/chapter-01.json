@@ -1,0 +1,16 @@
+{
+  "id": "chapter-01",
+  "title": "The Beginning",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "speaker": "Narrator",
+      "dialogue": "Placeholder dialogue for the opening scene."
+    },
+    {
+      "id": "scene-02",
+      "speaker": "Student",
+      "dialogue": "Placeholder dialogue for the second scene."
+    }
+  ]
+}
