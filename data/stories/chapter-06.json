@@ -40,13 +40,6 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
-          "title": "The Detention of the Coordinators",
-          "sourceCaption": "As reported by Amnesty International, APWLD (Asia Pacific Forum on Women, Law and Development), and The Daily Star on the 26–28 July 2024 detentions of student-coordinator leaders.",
-          "text": "On 26 July 2024, protest coordinators Nahid Islam, Asif Mahmud, and Abu Bakar Majumder were taken into custody by plainclothes police from Gonoshasthaya Nagar Hospital in Dhaka, against the advice of medical staff; their phones were seized. Three more coordinators — Sarjis Alam, Hasnat Abdullah, and Nusrat Tabassum — were detained over the following two days. The Home Minister later said the coordinators had been taken into \"custody for their safety.\""
-        },
-        {
-          "id": "evidence-02",
           "type": "video",
           "title": "A video from custody",
           "sourceCaption": "Titled in the source archive as 'iconic_august3.mp4'. From the chapter-06 source archive.",
@@ -61,13 +54,6 @@
           "assetUrl": "/evidence/chapter-06/ch6-02.jpg"
         },
         {
-          "id": "evidence-04",
-          "type": "document",
-          "title": "The Coerced-Statement Allegation",
-          "sourceCaption": "As reported by The Wire, Amnesty International, and The Daily Star on the 28 July 2024 video and the allegations of coercion surrounding it.",
-          "text": "On 28 July 2024, while in police custody, the coordinators released a video declaring an end to the protests. Other protest leaders and observers widely alleged that this statement was coerced and scripted under duress. That characterization is contested and is recorded here as an allegation rather than a confirmed finding."
-        },
-        {
           "id": "evidence-05",
           "type": "photograph",
           "title": "Nighttime candlelight vigil with students and citizens",
@@ -77,13 +63,6 @@
         },
         {
           "id": "evidence-06",
-          "type": "document",
-          "title": "A Contested Headcount",
-          "sourceCaption": "As reported by the EUAA Country of Origin Information Report and Bangladeshi daily newspapers citing Dhaka-based rights groups.",
-          "text": "Mass-arrest figures vary by source and date: one Dhaka-based rights group cited more than 3,000 arrested in Dhaka alone by 29 July 2024, while broader nationwide tallies published by Bangladeshi newspapers placed the number between roughly 10,000 and 11,700 across the full protest period. These figures are reported here as reported figures rather than as a single precise count."
-        },
-        {
-          "id": "evidence-07",
           "type": "photograph",
           "title": "Candlelight procession along an urban residential street at night",
           "sourceCaption": "Titled in the source archive as 'Image-40.jpg'. From the chapter-06 source archive.",
@@ -98,13 +77,6 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
-          "title": "The Red Profile Movement",
-          "sourceCaption": "As reported by The Daily Star, APWLD, and The Wire on the 29–30 July 2024 \"Red Profile\" movement and the call by the Students Against Discrimination coordinators.",
-          "text": "On 29–30 July 2024, coordinators of the Students Against Discrimination movement urged people to cover their faces with red cloth and turn their social-media profile pictures red, in protest against the government's declared national day of mourning for those killed. The movement spread widely, including among celebrities."
-        },
-        {
-          "id": "evidence-02",
           "type": "photograph",
           "title": "Student demonstration outside a multi-story academic building",
           "sourceCaption": "Titled in the source archive as 'Image-47.jpg'. From the chapter-06 source archive.",
@@ -112,26 +84,12 @@
           "assetUrl": "/evidence/chapter-06/ch6-05.jpg"
         },
         {
-          "id": "evidence-03",
-          "type": "document",
-          "title": "March for Justice, 31 July 2024",
-          "sourceCaption": "As reported by The Daily Star, APWLD, and EUAA Country of Origin Information Report on the 31 July 2024 \"March for Justice\" protests.",
-          "text": "On 31 July 2024, the student movement held \"March for Justice\" protests at courts, campuses, and streets in Dhaka and other major cities, protesting killings, mass arrests, and enforced disappearances; clashes with police occurred in several cities, with reported injuries."
-        },
-        {
-          "id": "evidence-04",
+          "id": "evidence-02",
           "type": "photograph",
           "title": "Aerial view of a mass gathering at a major city intersection",
           "sourceCaption": "Titled in the source archive as 'Image-82.jpg'. From the chapter-06 source archive.",
           "archiveNote": "A high-angle aerial or drone shot of a major urban intersection. Thousands of demonstrators pack the intersection and adjoining roads, with multi-story commercial buildings surrounding the frame. Date: July 2024.",
           "assetUrl": "/evidence/chapter-06/ch6-06.jpg"
-        },
-        {
-          "id": "evidence-05",
-          "type": "document",
-          "title": "The One-Point Demand, 3 August 2024",
-          "sourceCaption": "As reported by The Daily Star, The Wire, and Wikipedia's 'Non-cooperation movement' article (used here as a secondary cross-check rather than a primary source) on the 3 August 2024 announcement at Central Shaheed Minar.",
-          "text": "On 3 August 2024, coordinators of Students Against Discrimination announced a \"one-point demand\" — the resignation of Prime Minister Sheikh Hasina and her cabinet — at a mass rally at Central Shaheed Minar, Dhaka, rejecting Hasina's offer of talks at Ganabhaban. They announced that a \"non-cooperation movement\" would begin the next day."
         },
         {
           "id": "evidence-06",

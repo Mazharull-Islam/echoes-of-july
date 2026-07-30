@@ -16,8 +16,6 @@ import {
 
 type ResumePromptDialogProps = {
   open: boolean;
-  sceneNumber: number | null;
-  totalScenes: number;
   onResume: () => void;
   onStartOver: () => void;
   onOpenChange: (open: boolean) => void;
@@ -25,8 +23,6 @@ type ResumePromptDialogProps = {
 
 export function ResumePromptDialog({
   open,
-  sceneNumber,
-  totalScenes,
   onResume,
   onStartOver,
   onOpenChange,
@@ -37,7 +33,7 @@ export function ResumePromptDialog({
         <DialogHeader>
           <DialogTitle>Resume where you left off?</DialogTitle>
           <DialogDescription>
-            You were on scene {sceneNumber ?? 0} of {totalScenes}.
+            Pick up where you stopped reading this chapter.
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>

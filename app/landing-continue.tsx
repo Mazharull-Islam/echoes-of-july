@@ -57,7 +57,7 @@ export function LandingContinue({ chapterIds }: LandingContinueProps) {
           "h-auto p-0 text-sm sm:text-base"
         )}
       >
-        Continue from scene {resume.sceneIndex + 1}
+        Continue
       </Link>
     </p>
   );

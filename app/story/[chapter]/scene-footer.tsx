@@ -59,7 +59,7 @@ export function SceneFooter({
         onClick={onContinue}
         className={cn(buttonVariants({ variant: "default", size: "default" }))}
       >
-        {isAtChapterEnd ? "Continue to reflection" : "Continue"}
+        {isAtChapterEnd ? "Return to timeline" : "Continue"}
       </button>
     </CardFooter>
   );

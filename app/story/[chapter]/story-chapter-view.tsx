@@ -15,7 +15,9 @@ import {
   saveProgress,
 } from "@/lib/save-system";
 import type { Story } from "@/types/story";
+import type { TimelineItem } from "@/types/timeline";
 
+import { ChapterSidebar } from "./chapter-sidebar";
 import { EvidenceList } from "./evidence-list";
 import { ResumePromptDialog } from "./resume-prompt-dialog";
 import { SceneFooter } from "./scene-footer";
@@ -25,9 +27,14 @@ import { effectiveSceneType, resolveNextSceneId } from "./story-helpers";
 type StoryChapterViewProps = {
   chapter: string;
   story: Story;
+  timelineItems: ReadonlyArray<TimelineItem>;
 };
 
-export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
+export function StoryChapterView({
+  chapter,
+  story,
+  timelineItems,
+}: StoryChapterViewProps) {
   const router = useRouter();
   const scenes = story.scenes;
   const totalScenes = scenes.length;
@@ -38,7 +45,7 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
   const [choiceHistory, setChoiceHistory] = useState<string[]>([]);
   const [returnToChoiceSceneId, setReturnToChoiceSceneId] = useState<string | null>(null);
   const [previousSceneId, setPreviousSceneId] = useState<string | null>(null);
-  const [resumePrompt, setResumePrompt] = useState<{ sceneId: string; history: string[]; sceneNumber: number } | null>(null);
+  const [resumePrompt, setResumePrompt] = useState<{ sceneId: string; history: string[] } | null>(null);
 
   const currentScene = useMemo(
     () =>
@@ -59,7 +66,6 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
     setResumePrompt({
       sceneId: scenes[clampedOffset].id,
       history: saved.choiceHistory,
-      sceneNumber: clampedOffset + 1,
     });
   }, [chapter, totalScenes, firstSceneId, scenes]);
 
@@ -107,7 +113,7 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
   function handleContinue() {
     if (isAtChapterEnd) {
       clearProgress(chapter);
-      router.push(`/reflection/${chapter}`);
+      router.push("/timeline");
       return;
     }
     if (!nextSceneId) return;
@@ -132,65 +138,66 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
     router.push("/timeline");
   }
 
-  const currentSceneNumber = scenes.findIndex((scene) => scene.id === currentSceneId) + 1;
-
   return (
-    <section className="mx-auto flex w-full max-w-2xl flex-col gap-4 sm:gap-6">
-      <header className="flex flex-col gap-1 text-center sm:text-left">
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          {story.title}
-        </h1>
-        <p className="font-mono text-xs text-muted-foreground">
-          Scene {currentSceneNumber} of {totalScenes}
-        </p>
-      </header>
+    <section
+      aria-label={story.title}
+      className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-8"
+    >
+      <div className="mx-auto flex w-full max-w-2xl flex-col gap-4 sm:gap-6">
+        <header className="flex flex-col gap-1 text-center sm:text-left">
+          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            {story.title}
+          </h1>
+        </header>
 
-      <Card className="w-full">
-        <CardHeader>
-          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            {isChoiceScene
-              ? "A moment of reflection"
-              : isEvidenceScene
-                ? "Evidence"
-                : (currentScene.speaker ?? "Narrator")}
-          </p>
-          <CardTitle>{story.title}</CardTitle>
-        </CardHeader>
-        <CardContent>
-          {isChoiceScene ? (
-            <ChoiceScene
-              prompt={currentScene.choice?.prompt ?? ""}
-              options={currentScene.choice?.options ?? []}
-              onChoose={handleChoice}
-            />
-          ) : isEvidenceScene ? (
-            <EvidenceList items={currentScene.evidence ?? []} />
-          ) : (
-            <DialogueScene
-              speaker={currentScene.speaker}
-              dialogue={currentScene.dialogue}
-            />
-          )}
-        </CardContent>
-        <SceneFooter
-          isChoiceScene={isChoiceScene}
-          isAtChapterEnd={isAtChapterEnd}
-          previousSceneId={previousSceneId}
-          onBack={handleBack}
-          onContinue={handleContinue}
-          onTimeline={handleTimeline}
+        <Card className="w-full">
+          <CardHeader>
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              {isChoiceScene
+                ? "A moment of reflection"
+                : isEvidenceScene
+                  ? "Evidence"
+                  : (currentScene.speaker ?? "Narrator")}
+            </p>
+            <CardTitle>{story.title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            {isChoiceScene ? (
+              <ChoiceScene
+                prompt={currentScene.choice?.prompt ?? ""}
+                options={currentScene.choice?.options ?? []}
+                onChoose={handleChoice}
+              />
+            ) : isEvidenceScene ? (
+              <EvidenceList items={currentScene.evidence ?? []} />
+            ) : (
+              <DialogueScene
+                speaker={currentScene.speaker}
+                dialogue={currentScene.dialogue}
+              />
+            )}
+          </CardContent>
+          <SceneFooter
+            isChoiceScene={isChoiceScene}
+            isAtChapterEnd={isAtChapterEnd}
+            previousSceneId={previousSceneId}
+            onBack={handleBack}
+            onContinue={handleContinue}
+            onTimeline={handleTimeline}
+          />
+        </Card>
+        <ResumePromptDialog
+          open={resumePrompt !== null}
+          onResume={handleResume}
+          onStartOver={handleStartOver}
+          onOpenChange={(open) => {
+            if (!open) setResumePrompt(null);
+          }}
         />
-      </Card>
-      <ResumePromptDialog
-        open={resumePrompt !== null}
-        sceneNumber={resumePrompt?.sceneNumber ?? null}
-        totalScenes={totalScenes}
-        onResume={handleResume}
-        onStartOver={handleStartOver}
-        onOpenChange={(open) => {
-          if (!open) setResumePrompt(null);
-        }}
-      />
+      </div>
+      <aside className="lg:order-last">
+        <ChapterSidebar items={timelineItems} activeChapter={chapter} />
+      </aside>
     </section>
   );
 }

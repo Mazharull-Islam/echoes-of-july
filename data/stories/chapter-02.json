@@ -39,10 +39,11 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
-          "title": "The Bangla Blockade",
-          "sourceCaption": "European Union Agency for Asylum (EUAA), Bangladesh Country Focus Country of Origin Information Report, August 2025, “7–10 July 2024” section, citing local media reporting.",
-          "text": "Thousands of students boycotted classes and blocked major highways, railways, and intersections nationwide from July 7 to 10, 2024, including Shahbagh in Dhaka, causing severe disruption to traffic for several days running."
+          "type": "photograph",
+          "title": "Bangla Blockade at Shahbagh, 7 July 2024",
+          "sourceCaption": "The Daily Star / Prabir Das. Original archive filename: \"bangla_blockade_2.jpg\". From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "A group of dozens of male university students gathered on an asphalt road during a blockade at the Shahbagh intersection on 7 July 2024. Large white text painted directly on the road surface reads: \"দফা এক দাবি এক, কোটা বৈষম্য নিপাত যাক\" (\"One Point One Demand, Down with Quota Discrimination\"). On the left, a student sitting on the ground holds a handwritten cardboard placard with Bangla text (\"কোটার কবর\" — \"Grave of Quota\"). Several students are wearing red and green headband bands representing the Bangladesh flag, clapping, and chanting slogans. In the background, a rickshaw and street buildings are partially visible.",
+          "assetUrl": "/evidence/chapter-02/unity/bangla_blockade_2.jpg"
         },
         {
           "id": "evidence-02",
@@ -96,7 +97,7 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
+          "type": "newspaper",
           "title": "Concession and Escalation",
           "sourceCaption": "European Union Agency for Asylum (EUAA), Bangladesh Country Focus Country of Origin Information Report, August 2025, “7–10 July 2024” and “11–13 July 2024” sections.",
           "text": "On July 10, 2024, the Supreme Court temporarily suspended the quota ruling for one month following legal petitions, and the Rapid Action Battalion — a paramilitary force previously accused of serious human rights violations — was deployed alongside police that same day. By July 11, police announced they would act against road blockades, arguing the suspension removed justification to continue, though tens of thousands of protesters defied this and kept blocking roads."

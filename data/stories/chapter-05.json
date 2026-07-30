@@ -39,7 +39,7 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
+          "type": "newspaper",
           "title": "The Curfew and the Blackout",
           "sourceCaption": "As reported by Reuters and Context News reporting on the 18 July 2024 measures.",
           "text": "On 18 July 2024, the government imposed a nationwide internet and mobile-data shutdown and declared a curfew. The army, the Rapid Action Battalion, and the Border Guard Bangladesh were deployed alongside the police to enforce the order. Multiple outlets described the curfew as shoot-on-sight. Mobile data would not be restored for days; broadband would return in stages beginning around 24 July."
@@ -52,13 +52,6 @@
           "archiveNote": "Front page of The Daily Star dated Saturday, July 20, 2024. The dominant lead headline reads 'Govt imposes nationwide CURFEW' with a secondary line 'At least 66 more lives lost'.",
           "text": "The Daily Star's Saturday, July 20, 2024 edition reports on the severe escalation of violence across the country on Friday, July 19, 2024. Coverage highlights army deployment with 'shoot at sight' orders, air deployment of sound grenades and tear gas via RAB helicopters, and damage to major state infrastructure including Metro Rail stations and Setu Bhaban. The paper also outlines emergency situations across major Dhaka hospitals including Dhaka Medical College Hospital (DMCH).",
           "assetUrl": "/evidence/chapter-05/ch5-01.jpg"
-        },
-        {
-          "id": "evidence-03",
-          "type": "document",
-          "title": "A Death Toll Tallied Under Disconnection",
-          "sourceCaption": "As reported by Al Jazeera, Amnesty International, and HRW reporting on casualty figures during the shutdown.",
-          "text": "Reports at the time placed the death count on 19 and 20 July well above one hundred, with police fire cited as the cause of more than half of the deaths reported in that window. Independent verification was impeded by the internet blackout: journalists and rights monitors worked without connectivity, and figures were revised as more information came in. The numbers are recorded here as approximate."
         },
         {
           "id": "evidence-04",
@@ -77,13 +70,6 @@
           "archiveNote": "Front-page newspaper clipping with Bengali text. The headline reads 'সরকার যেকোনো মুহূর্তে আলোচনার জন্য প্রস্তুত' — 'Government Ready for Discussion at Any Moment'. Published 19 July 2024, page 1.",
           "text": "Shomoyer Alo's 19 July 2024 front page (page 1) reports Law Minister Anisul Huq's announcement that the government agreed in principle with the quota reform demands and was open to immediate talks. The sub-headline addresses the quota protesters directly. Coverage also features a statement from Awami League General Secretary Obaidul Quader proposing an 80 percent merit-based recruitment allocation ('মেধার ভিত্তিতে ৮০ শতাংশ নিয়োগের সুপারিশ করা হবে').",
           "assetUrl": "/evidence/chapter-05/ch5-03.jpg"
-        },
-        {
-          "id": "evidence-06",
-          "type": "document",
-          "title": "Stormed Jail, Burning Broadcaster",
-          "sourceCaption": "As reported by CNN, The Daily Star, and EUAA Country of Origin Information Report on the Narsingdi jail-storming and the attack on BTV's Dhaka headquarters.",
-          "text": "Protesters stormed the jail in Narsingdi district, and a separate group set fire to the state broadcaster's Dhaka offices. These two incidents, alongside the wider protests of 19 and 20 July, are cited in contemporaneous reporting as factors in the government's decision to deploy the army, the Rapid Action Battalion, and the Border Guard Bangladesh on 18 July under curfew."
         },
         {
           "id": "evidence-07",
@@ -111,24 +97,12 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
-          "title": "The Supreme Court, 21 July 2024",
-          "sourceCaption": "As reported by the BBC, Al Jazeera, and The Daily Star on the Supreme Court ruling of 21 July 2024.",
-          "text": "On 21 July 2024, the Supreme Court issued a ruling that scaled back the quota system in government jobs. Specifically, it restored the 2018 circular: 93 percent of civil-service posts were reallocated on merit, with 5 percent reserved for the children of freedom fighters and 1 percent each for three other categories. Reporting at the time treated the ruling as a turning point after a week of curfew, internet blackout, and casualty counts."
-        },
-        {
-          "id": "evidence-02",
-          "type": "document",
-          "title": "Curfew Eases, Relative Calm",
-          "sourceCaption": "As reported by Reuters and Context News on the gradual restoration of connectivity and the easing of curfew after 21 July 2024.",
-          "text": "In the days following the ruling, the curfew was eased and mobile internet was restored in stages starting around 23 July, with broadband restored somewhat later. Reporting in this window described a relative calm compared with the days of 18 through 20 July. Subsequent chapters cover the period after the ruling."
-        },
-        {
-          "id": "evidence-03",
-          "type": "document",
-          "title": "Verifying the Numbers After Reconnection",
-          "sourceCaption": "As reported by Al Jazeera, HRW, and the UN OHCHR summary of the events in Bangladesh through 21 July 2024.",
-          "text": "The disconnection that ran from 18 July through the early days after the ruling severely limited verification of casualty figures. Numbers reported in this period, including the eventual tolls cited by international observers, were revised upward as mobile internet returned. Reporting in this period should be read in that light."
+          "type": "newspaper",
+          "title": "High Court dismisses writ petition challenging the International Crimes (Tribunals) Act, 1973",
+          "sourceCaption": "Bangladesh High Court ruling on the writ petition filed by Supreme Court senior lawyer Muhammad Mohsin Rashid challenging the International Crimes (Tribunals) Act, 1973 and the ongoing trials for crimes against humanity linked to the July uprising. Image reference: highCourt.jpg.",
+          "archiveNote": "A photograph of the High Court building — the venue for the ruling dismissing the writ petition that challenged the International Crimes (Tribunals) Act, 1973. The petition had sought repeal of the act and argued that the trials were being used as a tool to target political opponents.",
+          "text": "The Bangladesh High Court recently dismissed a writ petition challenging the validity of the International Crimes (Tribunals) Act of 1973 and the ongoing trials for crimes against humanity linked to the July uprising. The petition, filed by Supreme Court senior lawyer Muhammad Mohsin Rashid, sought a directive for the government to repeal the act entirely, arguing that the legislation had become obsolete and inoperative following historical developments like the Shimla and Tripartite Delhi agreements. Furthermore, the petitioner contended that the law was being used as a tool to target political opponents and argued that appointing High Court judges to the International Crimes Tribunal violated constitutional provisions regarding judicial independence.\n\nBy dismissing the petition, the High Court bench, comprising Justice Khizir Ahmed Choudhury and Justice Md Ziaul Hoque, upheld the legal framework governing these proceedings. This ruling clears the legal path for the tribunal to continue hearing cases related to human rights abuses and crimes against humanity steming from the July uprising, reinforcing the state's mandate to pursue judicial accountability under the 1973 framework.",
+          "assetUrl": "/evidence/chapter-05/highCourt.jpg"
         }
       ]
     }
