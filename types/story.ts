@@ -15,9 +15,10 @@ export interface ChoiceOption {
 
 export interface EvidenceItem {
   id: string;
-  type: "photograph" | "document" | "newspaper" | "witness-statement";
+  type: "photograph" | "document" | "newspaper" | "witness-statement" | "video";
   title: string;
   sourceCaption: string;
+  archiveNote?: string;
   assetUrl?: string;
   text?: string;
 }

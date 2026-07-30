@@ -12,5 +12,38 @@
     "title": "The Catalyst for the July Revolution",
     "summary": "The High Court's reinstatement of the government-job quota brings students back to campus in peaceful protest, while teachers at dozens of universities are already on strike over their pensions.",
     "chapter": "chapter-01"
+  },
+  {
+    "id": "chapter-03",
+    "date": "15 July 2024",
+    "title": "Campus Violence on 15 July",
+    "summary": "Groups affiliated with the ruling party's student wing attack quota-reform protesters on multiple university campuses around the country, with a five-hour clash at Dhaka University reportedly leaving over 300 injured and police figures placing the count treated at DMCH near 297; the same evening, DMCH's emergency department is reportedly stormed, and parallel attacks are reported at Jahangirnagar University and other campuses.",
+    "chapter": "chapter-03"
+  },
+  {
+    "id": "chapter-04",
+    "date": "16 July 2024",
+    "title": "The Killing of Abu Sayed",
+    "summary": "Around noon, police fire tear gas and sound grenades on hundreds of students gathered at Park Mor near Gate 1 of Begum Rokeya University, Rangpur; most retreat, but Abu Sayed — an English department student and the movement's local coordinator — stands his ground and is killed. Sources differ on the weapon used: Amnesty's investigation found shotguns loaded with birdshot at close range; other contemporaneous reporting describes rubber bullets; the tribunal's findings describe “multiple gunshot injuries.” A tribunal later found no lawful or proportionate justification.",
+    "chapter": "chapter-04"
+  },
+  {
+    "id": "chapter-05",
+    "date": "18–21 July 2024",
+    "title": "Total Shutdown, 18–21 July 2024",
+    "summary": "On 18 July, the government declares a nationwide curfew and cuts mobile internet and broadband; the army, the Rapid Action Battalion, and the Border Guard Bangladesh are deployed under curfew order described in reporting as shoot-on-sight. The disconnection, which runs for several days, severely limits verification of casualty figures reported on 19 and 20 July. On 21 July, the Supreme Court scales back the quota system by restoring the 2018 circular (93 percent of posts on merit, 5 percent reserved for the children of freedom fighters, and 1 percent each for three other categories); the curfew eases and mobile internet is restored in stages beginning around 23 July, with reporting describing a relative calm in the days after the ruling.",
+    "chapter": "chapter-05"  },
+  {
+    "id": "chapter-06",
+    "date": "26 July – 3 August 2024",
+    "title": "Detentions, Red Profiles, and the One-Point Demand",
+    "summary": "From 26 July 2024, protest coordinators Nahid Islam, Asif Mahmud, and Abu Bakar Majumder are taken into custody by plainclothes police from Gonoshasthaya Nagar Hospital in Dhaka, followed within two days by Sarjis Alam, Hasnat Abdullah, and Nusrat Tabassum; the Home Minister later says the coordinators had been taken into \"custody for their safety.\" On 28 July, while in police custody, the coordinators release a video declaring an end to the protests; other protest leaders and observers widely allege the statement was coerced and scripted under duress, and that characterization is contested rather than settled. Mass-arrest figures vary widely: one Dhaka-based rights group cites 3,000+ arrested in Dhaka alone by 29 July, while broader nationwide tallies put the number between roughly 10,000 and 11,700 across the full protest period. On 29–30 July, the Red Profile movement emerges as coordinators urge people to cover their faces with red cloth and turn their social-media profile pictures red in protest against the government's declared national day of mourning. On 31 July, the student movement holds \"March for Justice\" protests at courts, campuses, and streets in Dhaka and other major cities. On 3 August, coordinators of Students Against Discrimination announce a \"one-point demand\" — the resignation of Prime Minister Sheikh Hasina and her cabinet — at a mass rally at Central Shaheed Minar, Dhaka, rejecting Hasina's offer of talks at Ganabhaban, and announce a \"non-cooperation movement\" beginning the next day.",
+    "chapter": "chapter-06"  },
+  {
+    "id": "chapter-07",
+    "date": "4–5 August 2024",
+    "title": "Non-Cooperation and Resignation",
+    "summary": "On 4 August 2024, Students Against Discrimination coordinators launch a nationwide \"non-cooperation movement,\" urging people not to pay taxes or utility bills and not to report to work, and reject Prime Minister Sheikh Hasina's offer of talks at Ganabhaban. Violent clashes spread nationwide in Dhaka and other cities. A 16-year-old student, Golam Nafiz, is shot and fatally wounded by police at the Farmgate intersection around 4:30pm; his death is recorded as a stated fact without description of physical injuries. The day's reported death toll rises through the hours as reporting catches up — early figures cite 27 dead, then 55, with the count approaching 90–100 by day's end; a later Wikipedia tally cites 97 dead including students. The government declares an indefinite nationwide curfew from 6pm. By evening, coordinators announce a \"Long March to Dhaka\" for the next day. On the morning of 5 August, Army Chief General Waker-uz-Zaman and other senior military officials meet with Hasina at Ganabhaban and, per later reporting, urge her to resign; by afternoon, she has boarded a military helicopter with her sister and departed for India. Around 3pm that day, the Army Chief announces on television that Hasina has resigned and that an interim government will be formed. Protesters storm and occupy both Ganabhaban and the National Parliament House, the curfew is lifted, and internet access is restored. Nobel laureate Muhammad Yunus is proposed as chief adviser of an interim government, announced on 6 August and formed on 8 August 2024 — closing the acute-uprising period of July 2024.",
+    "chapter": "chapter-07"
   }
 ]

@@ -1,0 +1,136 @@
+{
+  "id": "chapter-05",
+  "title": "The Shutdown",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "After the killing of Abu Sayed on 16 July, the government shifted from a defensive posture to a nationwide one. On 18 July 2024, internet and mobile-data services were shut down across the country. A curfew was imposed, and the army, the Rapid Action Battalion, and the Border Guard Bangladesh were deployed alongside the police. Multiple outlets described the curfew as shoot-on-sight."
+    },
+    {
+      "id": "scene-02",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "On 19 and 20 July the toll escalated sharply. Reports at the time placed the death count well above one hundred across those two days, with police fire cited as the cause of more than half of the deaths reported in that window; these figures are approximate and were revised as the situation continued. Protesters stormed a jail in Narsingdi district and set fire to the state broadcaster's Dhaka offices — events that fed into the government's decision to harden its response."
+    },
+    {
+      "id": "scene-03",
+      "type": "choice",
+      "choice": {
+        "prompt": "Which side of the shutdown would you like to follow first?",
+        "options": [
+          {
+            "id": "opt-a",
+            "label": "Life under the blackout",
+            "leadsTo": "scene-04a"
+          },
+          {
+            "id": "opt-b",
+            "label": "The court's ruling",
+            "leadsTo": "scene-04b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-04a",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Curfew and the Blackout",
+          "sourceCaption": "As reported by Reuters and Context News reporting on the 18 July 2024 measures.",
+          "text": "On 18 July 2024, the government imposed a nationwide internet and mobile-data shutdown and declared a curfew. The army, the Rapid Action Battalion, and the Border Guard Bangladesh were deployed alongside the police to enforce the order. Multiple outlets described the curfew as shoot-on-sight. Mobile data would not be restored for days; broadband would return in stages beginning around 24 July."
+        },
+        {
+          "id": "evidence-02",
+          "type": "newspaper",
+          "title": "The Daily Star — \"Govt imposes nationwide CURFEW\"",
+          "sourceCaption": "Titled in the source archive as 'July 19, 2024- The point of no return .jpg'. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "Front page of The Daily Star dated Saturday, July 20, 2024. The dominant lead headline reads 'Govt imposes nationwide CURFEW' with a secondary line 'At least 66 more lives lost'.",
+          "text": "The Daily Star's Saturday, July 20, 2024 edition reports on the severe escalation of violence across the country on Friday, July 19, 2024. Coverage highlights army deployment with 'shoot at sight' orders, air deployment of sound grenades and tear gas via RAB helicopters, and damage to major state infrastructure including Metro Rail stations and Setu Bhaban. The paper also outlines emergency situations across major Dhaka hospitals including Dhaka Medical College Hospital (DMCH).",
+          "assetUrl": "/evidence/chapter-05/ch5-01.jpg"
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "A Death Toll Tallied Under Disconnection",
+          "sourceCaption": "As reported by Al Jazeera, Amnesty International, and HRW reporting on casualty figures during the shutdown.",
+          "text": "Reports at the time placed the death count on 19 and 20 July well above one hundred, with police fire cited as the cause of more than half of the deaths reported in that window. Independent verification was impeded by the internet blackout: journalists and rights monitors worked without connectivity, and figures were revised as more information came in. The numbers are recorded here as approximate."
+        },
+        {
+          "id": "evidence-04",
+          "type": "newspaper",
+          "title": "Shomoyer Alo — \"এইচএসসির ২১, ২৩ ও ২৫ জুলাইয়ের পরীক্ষা স্থগিত\"",
+          "sourceCaption": "Titled in the source archive as 'board exam got postponed.jpg'. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "Newspaper clipping with Bengali text. The headline reads 'এইচএসসির ২১, ২৩ ও ২৫ জুলাইয়ের পরীক্ষা স্থগিত' — 'HSC Examinations of July 21, 23, and 25 Postponed'. Published 19 July 2024, page 12.",
+          "text": "Shomoyer Alo's 19 July 2024 edition (page 12) reports that all upcoming HSC and equivalent exams scheduled for July 21, 23, and 25 were postponed across all boards due to safety concerns amid escalating countrywide unrest. The announcement was made by Prof. Tapan Kumar Sarkar, Chairman of the Dhaka Education Board and President of the Inter-Education Board Coordination Committee. Rescheduled dates were to be announced later, with exams from July 28 onwards initially planned to proceed.",
+          "assetUrl": "/evidence/chapter-05/ch5-02.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "newspaper",
+          "title": "Shomoyer Alo — \"সরকার যেকোনো মুহূর্তে আলোচনার জন্য প্রস্তুত\"",
+          "sourceCaption": "Titled in the source archive as 'its working....jpg'. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "Front-page newspaper clipping with Bengali text. The headline reads 'সরকার যেকোনো মুহূর্তে আলোচনার জন্য প্রস্তুত' — 'Government Ready for Discussion at Any Moment'. Published 19 July 2024, page 1.",
+          "text": "Shomoyer Alo's 19 July 2024 front page (page 1) reports Law Minister Anisul Huq's announcement that the government agreed in principle with the quota reform demands and was open to immediate talks. The sub-headline addresses the quota protesters directly. Coverage also features a statement from Awami League General Secretary Obaidul Quader proposing an 80 percent merit-based recruitment allocation ('মেধার ভিত্তিতে ৮০ শতাংশ নিয়োগের সুপারিশ করা হবে').",
+          "assetUrl": "/evidence/chapter-05/ch5-03.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "document",
+          "title": "Stormed Jail, Burning Broadcaster",
+          "sourceCaption": "As reported by CNN, The Daily Star, and EUAA Country of Origin Information Report on the Narsingdi jail-storming and the attack on BTV's Dhaka headquarters.",
+          "text": "Protesters stormed the jail in Narsingdi district, and a separate group set fire to the state broadcaster's Dhaka offices. These two incidents, alongside the wider protests of 19 and 20 July, are cited in contemporaneous reporting as factors in the government's decision to deploy the army, the Rapid Action Battalion, and the Border Guard Bangladesh on 18 July under curfew."
+        },
+        {
+          "id": "evidence-07",
+          "type": "newspaper",
+          "title": "Shayer Biz — \"বিদ্যুৎ-পানি বন্ধ করলেও হল না ছাড়ার ঘোষণা\"",
+          "sourceCaption": "Titled in the source archive as 'how low the administration can go.jpg'. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "Newspaper clipping with Bengali text. The headline reads 'বিদ্যুৎ-পানি বন্ধ করলেও হল না ছাড়ার ঘোষণা' — 'Declaration to Not Leave Residential Halls Even if Electricity and Water Are Cut Off'. Published 19 July 2024, page 7.",
+          "text": "Shayer Biz's 19 July 2024 edition (page 7) reports on events at Barishal University, where students protesting the quota reform refused to leave their university halls despite university authorities ordering hall closures and cutting off basic utilities such as water and electricity. The piece quotes movement coordinator Sujoy Biswas Shuvo affirming student resolve to stay until demands were met.",
+          "assetUrl": "/evidence/chapter-05/ch5-04.jpg"
+        },
+        {
+          "id": "evidence-08",
+          "type": "newspaper",
+          "title": "Shomoyer Alo — \"নৈরাজ্যের বিরুদ্ধে চাঁদপুরে বীর মুক্তিযোদ্ধাদের মানববন্ধন\"",
+          "sourceCaption": "Titled in the source archive as 'protestors at chandpur.jpg'. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "Newspaper clipping with Bengali text featuring a photograph. The headline reads 'নৈরাজ্যের বিরুদ্ধে চাঁদপুরে বীর মুক্তিযোদ্ধাদের মানববন্ধন' — 'Human Chain Formed by Freedom Fighters in Chandpur Against Anarchy'. Published 19 July 2024, page 4.",
+          "text": "Shomoyer Alo's 19 July 2024 edition (page 4) reports on a human-chain demonstration held in Chandpur district by the local Muktijoddha Sangsad (Freedom Fighters' Association), with freedom fighters holding banners and national flags in protest against the unrest sweeping the country.",
+          "assetUrl": "/evidence/chapter-05/ch5-05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scene-04b",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Supreme Court, 21 July 2024",
+          "sourceCaption": "As reported by the BBC, Al Jazeera, and The Daily Star on the Supreme Court ruling of 21 July 2024.",
+          "text": "On 21 July 2024, the Supreme Court issued a ruling that scaled back the quota system in government jobs. Specifically, it restored the 2018 circular: 93 percent of civil-service posts were reallocated on merit, with 5 percent reserved for the children of freedom fighters and 1 percent each for three other categories. Reporting at the time treated the ruling as a turning point after a week of curfew, internet blackout, and casualty counts."
+        },
+        {
+          "id": "evidence-02",
+          "type": "document",
+          "title": "Curfew Eases, Relative Calm",
+          "sourceCaption": "As reported by Reuters and Context News on the gradual restoration of connectivity and the easing of curfew after 21 July 2024.",
+          "text": "In the days following the ruling, the curfew was eased and mobile internet was restored in stages starting around 23 July, with broadband restored somewhat later. Reporting in this window described a relative calm compared with the days of 18 through 20 July. Subsequent chapters cover the period after the ruling."
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "Verifying the Numbers After Reconnection",
+          "sourceCaption": "As reported by Al Jazeera, HRW, and the UN OHCHR summary of the events in Bangladesh through 21 July 2024.",
+          "text": "The disconnection that ran from 18 July through the early days after the ruling severely limited verification of casualty figures. Numbers reported in this period, including the eventual tolls cited by international observers, were revised upward as mobile internet returned. Reporting in this period should be read in that light."
+        }
+      ]
+    }
+  ]
+}

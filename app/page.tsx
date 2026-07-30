@@ -25,6 +25,11 @@ export default function HomePage() {
           PLACEHOLDER IMAGE — unconfirmed rights, must be replaced with a
           licensed/owned photo before public submission.
         */}
+        {/* suppressHydrationWarning guards against browser extensions
+            (Dark Reader, etc.) that inject data-darkreader-* attributes
+            and rewrite inline style values before React hydrates. The
+            server-rendered HTML and the first client render still match
+            semantically — only third-party-mutated props differ. */}
         <Image
           src="/hero-placeholder.avif"
           alt=""
@@ -33,6 +38,7 @@ export default function HomePage() {
           sizes="100vw"
           quality={90}
           className="object-cover object-center opacity-70"
+          suppressHydrationWarning
         />
         {/* Slate-to-transparent overlay. The image is intentionally shown
             at higher opacity than the first pass — the slate layer sits

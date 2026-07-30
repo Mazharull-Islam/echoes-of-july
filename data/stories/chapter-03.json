@@ -1,16 +1,87 @@
 {
   "id": "chapter-03",
-  "title": "The Beginning",
+  "title": "Campus Violence on 15 July",
   "scenes": [
     {
-      "id": "scene-1",
+      "id": "scene-01",
+      "type": "dialogue",
       "speaker": "Narrator",
-      "dialogue": "The protest began early in the morning."
+      "dialogue": "On 15 July 2024, groups affiliated with the ruling party's student wing attacked quota-reform protesters on multiple university campuses around the country. A five-hour clash at Dhaka University reportedly left over 300 injured, with police figures placing the count treated at DMCH near 297. The same evening, DMCH's emergency department was reportedly stormed, and parallel attacks were reported at Jahangirnagar University and other campuses."
     },
     {
-      "id": "scene-2",
-      "speaker": "Student",
-      "dialogue": "We gathered outside the campus."
+      "id": "scene-02",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "newspaper",
+          "title": "Prothom Alo — \"হামলায় আহত শতাধিক ঢাকা মেডিকেলে\"",
+          "sourceCaption": "Titled in the source archive as `\"barbaric\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Prothom Alo / Sajid Hossain, Dipu Malakar.",
+          "archiveNote": "Digital newspaper article featuring five photographs depicting injured individuals receiving care inside a medical facility, individuals wielding sticks and helmets during physical altercations, people assisting injured persons, and street-level movement outside the medical facility. Published 15 July 2024.",
+          "text": "Prothom Alo's 15 July 2024 reporting documents over a hundred individuals seeking medical treatment at Dhaka Medical College Hospital following violent clashes during student demonstrations. The report records injuries, emergency room activity, and confrontations surrounding the Dhaka University campus, the same five-hour clash that reportedly left over 300 injured.",
+          "assetUrl": "/evidence/chapter-03/du/du-01.jpg"
+        },
+        {
+          "id": "evidence-02",
+          "type": "newspaper",
+          "title": "Prothom Alo — \"রাজু ভাস্কর্যে বিক্ষোভে যাওয়ার সময় ইডেন কলেজের শিক্ষার্থীদের ওপর ছাত্রলীগের হামলার অভিযোগ\"",
+          "sourceCaption": "Titled in the source archive as `\"Man in women's field\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Prothom Alo / Dipu Malakar.",
+          "archiveNote": "Digital newspaper report with three photographs displaying a group of female students marching down a roadway, women gathering inside/outside institutional premises, and students interacting around an opened metal gate. Published 15 July 2024.",
+          "text": "Prothom Alo's 15 July 2024 report documents allegations that members of the Chhatra League attempted to prevent students from Eden Mohila College from joining a planned protest gathering at the Raju Memorial Sculpture at Dhaka University. The report describes confrontations as students attempted to reach the protest site on the same day of the broader DU campus attacks.",
+          "assetUrl": "/evidence/chapter-03/du/du-02.jpg"
+        },
+        {
+          "id": "evidence-03",
+          "type": "newspaper",
+          "title": "The Daily Sangram — \"কোটাবিরোধী আন্দোলনকে রাজনৈতিকভাবে মোকাবিলা করার কোনো ইচ্ছা সরকারের নেই\"",
+          "sourceCaption": "Titled in the source archive as `\"the hypocrisy\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: The Daily Sangram.",
+          "archiveNote": "Single-column front-page print newspaper clipping featuring large Bengali headlines and article text detailing political commentary on the quota reform movement. Published 15 July 2024.",
+          "text": "The Daily Sangram's 15 July 2024 edition reports official government statements regarding the anti-quota movement, featuring remarks by Road Transport and Bridges Minister Obaidul Quader concerning political involvement and judicial processes related to the quota policy. The article captures the government's stated position during the mid-July escalation.",
+          "assetUrl": "/evidence/chapter-03/du/du-03.jpg"
+        },
+        {
+          "id": "evidence-04",
+          "type": "newspaper",
+          "title": "Prothom Alo — \"ঢাকা বিশ্ববিদ্যালয়ে আন্দোলনকারীদের বিক্ষোভ দুপুরে, বিকেলে ছাত্রলীগের অবস্থান\"",
+          "sourceCaption": "Titled in the source archive as `\"Whose side they were on?\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Prothom Alo.",
+          "archiveNote": "Web article clipping featuring a nighttime photograph of a large crowd gathered outdoors on university grounds, accompanied by extensive Bengali news text describing the timeline of events. Published 15 July 2024.",
+          "text": "Prothom Alo's 15 July 2024 reporting outlines scheduled demonstrations and opposing political gatherings at Dhaka University following late-night campus rallies sparked by official statements regarding the quota reform movement. The article describes a noon rally by protesters and an afternoon counter-gathering by Chhatra League on the same day.",
+          "assetUrl": "/evidence/chapter-03/du/du-04.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "photograph",
+          "title": "An injured student being transported on a stretcher at Jahangirnagar University Medical Centre",
+          "sourceCaption": "Titled in the source archive as `\"BCL attacks quota protesters at JU, more than 50 injured\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Prothom Alo.",
+          "archiveNote": "An indoor brick corridor where a group of individuals, including students and a man in traditional attire with a white beard and cap, are carrying an injured person on a stretcher. Published 15 July 2024.",
+          "assetUrl": "/evidence/chapter-03/ju/ju-01.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "photograph",
+          "title": "The walkway leading to the Vice Chancellor's residence at Jahangirnagar University after the overnight attack",
+          "sourceCaption": "Titled in the source archive as `\"Black Night- Chhatra League men attack JU protesters at VC's residence\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Dhaka Tribune / Bangla Tribune.",
+          "archiveNote": "A paved exterior walkway illuminated by streetlights at night, showing scattered brickbats and debris along the path, with a closed gate and figures standing in the distance. Photographed 16 July 2024.",
+          "assetUrl": "/evidence/chapter-03/ju/ju-02.jpg"
+        },
+        {
+          "id": "evidence-07",
+          "type": "photograph",
+          "title": "A dense crowd of students gathered under a roofed area at night",
+          "sourceCaption": "Outlet / photographer / archive credit: unknown. Original archive filename: `\"Quota reform protesters 'attacked by BCL' at JU; hall provost resigns\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "A large crowd of students gathered tightly under an outdoor roofed area at night, with several individuals holding up mobile phones to record the crowd. Date: mid-July 2024 (exact date unknown). Location: Jahangirnagar University, Savar (exact location unconfirmed).",
+          "assetUrl": "/evidence/chapter-03/ju/ju-03.jpg"
+        },
+        {
+          "id": "evidence-08",
+          "type": "newspaper",
+          "title": "Prothom Alo — \"শাহজালাল বিশ্ববিদ্যালয়ে আন্দোলনরত শিক্ষার্থীদের ওপর ছাত্রলীগের হামলার প্রতিবাদে মিছিল\"",
+          "sourceCaption": "Titled in the source archive as `\"SUST\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Prothom Alo / Anis Mahmud.",
+          "archiveNote": "Digital newspaper article featuring two photographs; the upper photo shows female students marching with banners, and the lower photo shows students sitting in protest on the ground near the university entrance gate. Published 15 July 2024.",
+          "text": "Prothom Alo's 15 July 2024 reporting documents a protest rally held by students at Shahjalal University of Science and Technology (SUST) in Sylhet, reacting to campus incidents and demanding quota system reform. The article describes a procession protesting the Chhatra League attack on demonstrators at the university.",
+          "assetUrl": "/evidence/chapter-03/sust/sust-01.jpg"
+        }
+      ]
     }
   ]
 }

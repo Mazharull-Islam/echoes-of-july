@@ -1,0 +1,146 @@
+{
+  "id": "chapter-07",
+  "title": "Non-Cooperation and Resignation, 4–5 August 2024",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "On 3 August 2024, coordinators of Students Against Discrimination had announced a \"one-point demand\" — the resignation of Prime Minister Sheikh Hasina and her cabinet — and rejected her offer of talks at Ganabhaban. The next day, 4 August, the same coordinators launched a nationwide \"non-cooperation movement,\" urging people not to pay taxes or utility bills and not to report to work. Hasina's response was to repeat that the \"doors of Ganabhaban are open\" for talks; the student coordinators refused the offer. What followed would be the deadliest single day of the July uprising."
+    },
+    {
+      "id": "scene-02",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "On 4 August 2024, violent clashes spread nationwide as protesters, police, and ruling-party activists clashed in Dhaka and other cities. At Dhaka's Shahbagh, protesters attacked Bangabandhu Sheikh Mujib Medical University and set vehicles on fire; police used live ammunition, rubber bullets, and tear gas to disperse crowds. The day's reported death toll rose sharply through the hours as reporting caught up — early figures cited 27 dead, then 55, with the count approaching 90–100 by day's end; a later Wikipedia tally cites 97 dead including students. The government declared an indefinite nationwide curfew from 6pm that evening. By nightfall, coordinators had announced a \"Long March to Dhaka\" for the next day, calling on people nationwide to converge on the capital to demand Hasina's resignation, defying the curfew."
+    },
+    {
+      "id": "scene-03",
+      "type": "choice",
+      "next": null,
+      "choice": {
+        "prompt": "Which day's events would you like to follow first?",
+        "options": [
+          {
+            "id": "opt-a",
+            "label": "A day of nationwide clashes",
+            "leadsTo": "scene-04a"
+          },
+          {
+            "id": "opt-b",
+            "label": "The march that ended an era",
+            "leadsTo": "scene-04b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-04a",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Non-Cooperation Movement, 4 August 2024",
+          "sourceCaption": "As reported by Reuters, NBC News, and CNN on the 4 August 2024 launch of the non-cooperation movement by Students Against Discrimination coordinators.",
+          "text": "On 4 August 2024, coordinators of Students Against Discrimination launched a nationwide \"non-cooperation movement,\" urging people not to pay taxes or utility bills and not to report to work, rejecting Prime Minister Sheikh Hasina's offer of talks at Ganabhaban. Hasina had said the \"doors of Ganabhaban are open\" for negotiations; the student coordinators refused."
+        },
+        {
+          "id": "evidence-02",
+          "type": "video",
+          "title": "Footage from the protests of August 4–5",
+          "sourceCaption": "Titled in the source archive as 'victory_parade.mp4'. From the chapter-07 source archive.",
+          "assetUrl": "/evidence/chapter-07/ch7-01.mp4"
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "The Day's Casualty Range",
+          "sourceCaption": "As reported by Reuters, CNN, NPR, and OPB on 4 August 2024 casualty figures, with Wikipedia's 'Killing of Golam Nafiz' and related articles used here as secondary cross-checks rather than primary sources.",
+          "text": "Death toll estimates on 4 August 2024 varied by source and by time of reporting. Early reports cited 27 dead by midday; the figure rose to 55 by late afternoon and approached 90–100 by day's end as reporting caught up. A subsequent Wikipedia tally cites 97 dead, including students. These figures are recorded as reported figures that grew through the day rather than as a single precise count."
+        },
+        {
+          "id": "evidence-04",
+          "type": "document",
+          "title": "The Killing of Golam Nafiz, Farmgate",
+          "sourceCaption": "As reported by BBC, Reuters, and The Daily Star, with Wikipedia's 'Killing of Golam Nafiz' article used here as a secondary cross-check rather than a primary source.",
+          "text": "Golam Nafiz, a 16-year-old student, was shot and fatally wounded by police at the Farmgate intersection in Dhaka around 4:30pm on 4 August 2024. Fellow protesters attempted to transport him to hospital by rickshaw. His death is recorded here as a stated fact; no description of physical injuries is included."
+        },
+        {
+          "id": "evidence-05",
+          "type": "document",
+          "title": "The Indefinite Curfew and the Long March Call",
+          "sourceCaption": "As reported by Reuters, CNN, and NPR on the 4 August 2024 curfew declaration and the 'Long March to Dhaka' announcement by Students Against Discrimination coordinators.",
+          "text": "On 4 August 2024, the government declared an indefinite nationwide curfew from 6pm. By evening, coordinators of the student movement had announced a \"Long March to Dhaka\" for 5 August, calling on people nationwide to converge on the capital to demand Hasina's resignation, in defiance of the curfew order."
+        }
+      ]
+    },
+    {
+      "id": "scene-04b",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Long March Converges on Dhaka",
+          "sourceCaption": "As reported by Reuters, CNN, OPB, and The Daily Star on the 5 August 2024 march into Dhaka, with Wikipedia's 'Non-cooperation movement' article used here as a secondary cross-check rather than a primary source.",
+          "text": "On 5 August 2024, around 2:25pm, Students Against Discrimination and thousands of protesters gathered near Shaheed Minar in Dhaka, and the march proceeded into the city despite the curfew order in force from the previous evening. Reporting describes the convergence as the largest single-day mobilization of the movement."
+        },
+        {
+          "id": "evidence-02",
+          "type": "document",
+          "title": "The Meeting at Ganabhaban, Morning of 5 August",
+          "sourceCaption": "As later reported by Reuters and BBC, with Wikipedia's 'Resignation of Sheikh Hasina' article used here as a secondary cross-check rather than a primary source.",
+          "text": "On the morning of 5 August 2024, Army Chief General Waker-uz-Zaman and other senior military officials met with Prime Minister Sheikh Hasina at Ganabhaban and urged her to resign, per later reporting. By afternoon, she had boarded a military helicopter with her sister and departed for India."
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "The Resignation Announcement",
+          "sourceCaption": "As reported by BBC, Reuters, and CNN on the 5 August 2024 announcement by Army Chief General Waker-uz-Zaman, with Wikipedia's 'Resignation of Sheikh Hasina' article used here as a secondary cross-check rather than a primary source.",
+          "text": "Around 3pm on 5 August 2024, Army Chief General Waker-uz-Zaman announced on television that Prime Minister Sheikh Hasina had resigned and that an interim government would be formed. He said he had instructed the army and police not to fire on protesters and urged restraint and calm."
+        },
+        {
+          "id": "evidence-04",
+          "type": "document",
+          "title": "Ganabhaban and Jatiya Sangsad Bhaban Occupied, Curfew Lifted",
+          "sourceCaption": "As reported by CNN, BBC, and The Daily Star on the 5 August 2024 occupation of Ganabhaban and the National Parliament House, and the lifting of the curfew.",
+          "text": "On 5 August 2024, protesters stormed and occupied Ganabhaban, the prime minister's residence, and the Jatiya Sangsad Bhaban, the National Parliament House. The nationwide curfew was lifted and internet access was restored. Nobel laureate Muhammad Yunus was proposed as chief adviser of an interim government, announced on 6 August, with the government formed on 8 August 2024."
+        },
+        {
+          "id": "evidence-05",
+          "type": "photograph",
+          "title": "Aerial View of Jatiya Sangsad Bhaban, 5 August 2024",
+          "sourceCaption": "Titled in the source archive as '486670289_649674548044277_8909713661485591198_n.jpg'. From the chapter-07 source archive. Outlet / Photographer credit per source archive: Wing Shots / CricVerse.",
+          "archiveNote": "Two-frame composite: top frame is an aerial view of thousands of citizens gathered across the steps and south plaza of the Jatiya Sangsad Bhaban (National Parliament House); bottom frame is an expanded high-angle drone view showing crowds surrounding the main architectural structure, bridges, and surrounding lake area. Captures the historic public occupation of the parliament grounds in Dhaka on 5 August 2024.",
+          "assetUrl": "/evidence/chapter-07/ch7-02.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "photograph",
+          "title": "Sarjis Alam's Facebook Announcement of the Long March to Dhaka",
+          "sourceCaption": "Titled in the source archive as '561054107_1242732471234818_4581209820460106043_n.jpg'. From the chapter-07 source archive. Outlet / Photographer credit per source archive: Facebook (Md Sarjis Alam).",
+          "archiveNote": "Public Facebook post by movement coordinator Md Sarjis Alam dated 4 August 2024, carrying the headline 'পরশু নয়, কালকেই লং মার্চ টু ঢাকা !' ('Not the day after tomorrow, tomorrow is the Long March to Dhaka!'). The post moved the planned Long March program forward from 6 August to 5 August 2024 and helped mobilize mass crowds toward the capital the next day.",
+          "assetUrl": "/evidence/chapter-07/ch7-03.jpg"
+        },
+        {
+          "id": "evidence-07",
+          "type": "newspaper",
+          "title": "Prothom Alo — \"বিভিন্ন স্থানে সংঘর্ষ, গাজীপুরে নিহত ১, কুমিল্লায় গুলিবিদ্ধ ৭\"",
+          "sourceCaption": "Titled in the source archive as 'Prothomalo.com04-Aug-24p-1s-5156-892_69.jpg'. From the chapter-07 source archive. Outlet / Photographer credit per source archive: Prothom Alo, p.1, 04 August 2024.",
+          "archiveNote": "Front-page print newspaper clipping featuring a large main headline in Bengali (\"বিভিন্ন স্থানে সংঘর্ষ, গাজীপুরে নিহত ১, কুমিল্লায় গুলিবিদ্ধ ৭\" — 'Clashes in Various Places, 1 Killed in Gazipur, 7 Shot in Cumilla'), publication metadata header (04-Aug-24, page 1), and multi-column article text. Published 4 August 2024, reporting on the non-cooperation program events and violent clashes of Saturday, 3 August 2024.",
+          "text": "Prothom Alo's 4 August 2024 front-page reporting documents nationwide non-cooperation program events and violent clashes that occurred on Saturday, 3 August 2024, the day before the non-cooperation movement formally launched. The article reports the death of Md. Jahangir Alam (45) in Gazipur and multiple gunshot injuries in Cumilla, alongside major road and highway blockades (Dhaka-Chittagong, Dhaka-Mymensingh, Dhaka-Sylhet) and confrontation reports from Faridpur, Tangail, Naogaon, Sylhet, and Bogura. The article documents the political backdrop and casualty geography on the day after the 3 August Shaheed Minar rally.",
+          "assetUrl": "/evidence/chapter-07/ch7-04.jpg"
+        },
+        {
+          "id": "evidence-08",
+          "type": "photograph",
+          "title": "The Business Standard — ICT Chief Prosecutor on the Army's Role in the July Uprising",
+          "sourceCaption": "Titled in the source archive as 'Screenshot 2026-07-30 at 9.29.36 PM.png'. From the chapter-07 source archive. Outlet / Photographer credit per source archive: The Business Standard, 17 October 2025.",
+          "archiveNote": "News card image featuring the main English headline 'Army acted as shield for students during July Uprising, fired blanks to disperse police,' quoting Tajul Islam, Chief Prosecutor of the International Crimes Tribunal (ICT). The composition overlays a portrait of Tajul Islam against background imagery of military personnel interacting with demonstrators during the 2024 uprising. Published by The Business Standard on 17 October 2025, more than a year after the events depicted.",
+          "assetUrl": "/evidence/chapter-07/ch7-05.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "chapter-06",
+  "title": "Detentions, Red Profiles, and the One-Point Demand",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "After the Supreme Court's 21 July 2024 ruling that scaled back the quota system, reporting described a relative calm. The curfew eased and mobile internet was restored in stages beginning around 23 July. That window of calm would prove short. Within days, attention shifted from the streets to the leaders of the student movement, as a sequence of detentions began that would reshape the protests in the days that followed."
+    },
+    {
+      "id": "scene-02",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "On 26 July 2024, protest coordinators Nahid Islam, Asif Mahmud, and Abu Bakar Majumder were taken into custody by plainclothes police from Gonoshasthaya Nagar Hospital in Dhaka, against the advice of medical staff; their phones were seized. Three more coordinators — Sarjis Alam, Hasnat Abdullah, and Nusrat Tabassum — were detained over the following two days. The Home Minister later said the coordinators had been taken into \"custody for their safety.\" On 28 July, while in police custody, the coordinators released a video declaring an end to the protests. Other protest leaders and observers widely alleged that this statement was coerced and scripted under duress; that characterization is contested and is presented here as an allegation rather than a confirmed finding."
+    },
+    {
+      "id": "scene-03",
+      "type": "choice",
+      "next": null,
+      "choice": {
+        "prompt": "Which thread would you like to follow first?",
+        "options": [
+          {
+            "id": "opt-a",
+            "label": "Detentions and the coerced statement",
+            "leadsTo": "scene-04a"
+          },
+          {
+            "id": "opt-b",
+            "label": "Red profiles and the One-Point Demand",
+            "leadsTo": "scene-04b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-04a",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Detention of the Coordinators",
+          "sourceCaption": "As reported by Amnesty International, APWLD (Asia Pacific Forum on Women, Law and Development), and The Daily Star on the 26–28 July 2024 detentions of student-coordinator leaders.",
+          "text": "On 26 July 2024, protest coordinators Nahid Islam, Asif Mahmud, and Abu Bakar Majumder were taken into custody by plainclothes police from Gonoshasthaya Nagar Hospital in Dhaka, against the advice of medical staff; their phones were seized. Three more coordinators — Sarjis Alam, Hasnat Abdullah, and Nusrat Tabassum — were detained over the following two days. The Home Minister later said the coordinators had been taken into \"custody for their safety.\""
+        },
+        {
+          "id": "evidence-02",
+          "type": "video",
+          "title": "A video from custody",
+          "sourceCaption": "Titled in the source archive as 'iconic_august3.mp4'. From the chapter-06 source archive.",
+          "assetUrl": "/evidence/chapter-06/ch6-01.mp4"
+        },
+        {
+          "id": "evidence-03",
+          "type": "photograph",
+          "title": "An armed individual aiming a shotgun across an urban street",
+          "sourceCaption": "Titled in the source archive as 'Image-12.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "A daytime photograph of a residential street. A man in a blue patterned shirt and jeans stands in the roadway aiming a shotgun upward. Low-hanging overhead cables and papaya-tree leaves frame the foreground. Another individual walks behind him further down the lane. Date: July 2024.",
+          "assetUrl": "/evidence/chapter-06/ch6-02.jpg"
+        },
+        {
+          "id": "evidence-04",
+          "type": "document",
+          "title": "The Coerced-Statement Allegation",
+          "sourceCaption": "As reported by The Wire, Amnesty International, and The Daily Star on the 28 July 2024 video and the allegations of coercion surrounding it.",
+          "text": "On 28 July 2024, while in police custody, the coordinators released a video declaring an end to the protests. Other protest leaders and observers widely alleged that this statement was coerced and scripted under duress. That characterization is contested and is recorded here as an allegation rather than a confirmed finding."
+        },
+        {
+          "id": "evidence-05",
+          "type": "photograph",
+          "title": "Nighttime candlelight vigil with students and citizens",
+          "sourceCaption": "Titled in the source archive as 'Image-39.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "A nighttime photograph of a large outdoor crowd gathered for a candlelight vigil. Numerous individuals hold lit candles raised above their heads, with central figures holding up placards. Date: July 2024.",
+          "assetUrl": "/evidence/chapter-06/ch6-03.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "document",
+          "title": "A Contested Headcount",
+          "sourceCaption": "As reported by the EUAA Country of Origin Information Report and Bangladeshi daily newspapers citing Dhaka-based rights groups.",
+          "text": "Mass-arrest figures vary by source and date: one Dhaka-based rights group cited more than 3,000 arrested in Dhaka alone by 29 July 2024, while broader nationwide tallies published by Bangladeshi newspapers placed the number between roughly 10,000 and 11,700 across the full protest period. These figures are reported here as reported figures rather than as a single precise count."
+        },
+        {
+          "id": "evidence-07",
+          "type": "photograph",
+          "title": "Candlelight procession along an urban residential street at night",
+          "sourceCaption": "Titled in the source archive as 'Image-40.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "A perspective shot from within a night procession. Hands hold lit candles raised toward the sky. Urban residential buildings, street lights, overhead power cables, and a phone screen recording the vigil are visible in the frame. Date: July 2024.",
+          "assetUrl": "/evidence/chapter-06/ch6-04.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scene-04b",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Red Profile Movement",
+          "sourceCaption": "As reported by The Daily Star, APWLD, and The Wire on the 29–30 July 2024 \"Red Profile\" movement and the call by the Students Against Discrimination coordinators.",
+          "text": "On 29–30 July 2024, coordinators of the Students Against Discrimination movement urged people to cover their faces with red cloth and turn their social-media profile pictures red, in protest against the government's declared national day of mourning for those killed. The movement spread widely, including among celebrities."
+        },
+        {
+          "id": "evidence-02",
+          "type": "photograph",
+          "title": "Student demonstration outside a multi-story academic building",
+          "sourceCaption": "Titled in the source archive as 'Image-47.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "A daytime photograph of a student gathering in front of a multi-story campus building. The walls are marked with red spray-painted slogans. Participants raise hands, hold placards, and capture the event on mobile phones. Date: July 2024.",
+          "assetUrl": "/evidence/chapter-06/ch6-05.jpg"
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "March for Justice, 31 July 2024",
+          "sourceCaption": "As reported by The Daily Star, APWLD, and EUAA Country of Origin Information Report on the 31 July 2024 \"March for Justice\" protests.",
+          "text": "On 31 July 2024, the student movement held \"March for Justice\" protests at courts, campuses, and streets in Dhaka and other major cities, protesting killings, mass arrests, and enforced disappearances; clashes with police occurred in several cities, with reported injuries."
+        },
+        {
+          "id": "evidence-04",
+          "type": "photograph",
+          "title": "Aerial view of a mass gathering at a major city intersection",
+          "sourceCaption": "Titled in the source archive as 'Image-82.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "A high-angle aerial or drone shot of a major urban intersection. Thousands of demonstrators pack the intersection and adjoining roads, with multi-story commercial buildings surrounding the frame. Date: July 2024.",
+          "assetUrl": "/evidence/chapter-06/ch6-06.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "document",
+          "title": "The One-Point Demand, 3 August 2024",
+          "sourceCaption": "As reported by The Daily Star, The Wire, and Wikipedia's 'Non-cooperation movement' article (used here as a secondary cross-check rather than a primary source) on the 3 August 2024 announcement at Central Shaheed Minar.",
+          "text": "On 3 August 2024, coordinators of Students Against Discrimination announced a \"one-point demand\" — the resignation of Prime Minister Sheikh Hasina and her cabinet — at a mass rally at Central Shaheed Minar, Dhaka, rejecting Hasina's offer of talks at Ganabhaban. They announced that a \"non-cooperation movement\" would begin the next day."
+        },
+        {
+          "id": "evidence-06",
+          "type": "newspaper",
+          "title": "Shomoyer Alo — \"আদালত খুললেও স্বাভাবিক হয়নি বিচারকাজ\"",
+          "sourceCaption": "Titled in the source archive as 'Shomoyer_Alo26-Jul-24p-1s-8-6_280.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "Newspaper clipping with Bengali text. The lead headline reads 'আদালত খুললেও স্বাভাবিক হয়নি বিচারকাজ' — 'Judicial Work Has Not Normalised Despite Courts Reopening'. Sub-headline: 'সহিংসতায় গ্রেপ্তার আসামিদের দেখতে স্বজনদের ভিড়' — 'Relatives Crowd to See Accused Arrested in Violence'. Published 26 July 2024, page 1.",
+          "text": "Shomoyer Alo's 26 July 2024 edition (page 1) reports that court operations at lower courts in Dhaka remained constrained due to the prevailing curfew following mass arrests linked to the movement, even after courts reopened. Large crowds of anxious relatives gathered outside the Chief Metropolitan Magistrate (CMM) Court and prison vans in Dhaka to obtain information on detained family members. The piece also notes the presence of pro-government lawyer rallies outside court premises while regular litigants were largely absent due to curfew restrictions.",
+          "assetUrl": "/evidence/chapter-06/ch6-07.jpg"
+        },
+        {
+          "id": "evidence-07",
+          "type": "newspaper",
+          "title": "Shomoyer Alo — \"রাষ্ট্রীয় সম্পদ বিনষ্টকারীদের নির্মূল করা হবে\"",
+          "sourceCaption": "Titled in the source archive as 'Shomoyer_Alo26-Jul-24p-2s-5-3_300.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "Newspaper clipping with Bengali text. The headline reads 'রাষ্ট্রীয় সম্পদ বিনষ্টকারীদের নির্মূল করা হবে' — 'Destroyers of State Property Will Be Eradicated'. Published 26 July 2024, page 2.",
+          "text": "Shomoyer Alo's 26 July 2024 edition (page 2) reports on statements made by Dhaka South City Corporation (DSCC) Mayor Barrister Sheikh Fazle Noor Taposh during a relief distribution event at Segunbagicha. The mayor warned of strict law-enforcement actions against those involved in sabotage and the destruction of state assets, and alleged that opposition groups (BNP-Jamaat) had orchestrated violence to overthrow the government. The piece also mentions remarks by MP A. F. M. Bahauddin Nasim regarding ongoing curfew measures.",
+          "assetUrl": "/evidence/chapter-06/ch6-08.jpg"
+        },
+        {
+          "id": "evidence-08",
+          "type": "photograph",
+          "title": "Facebook profile updated to a solid red profile picture",
+          "sourceCaption": "Titled in the source archive as 'ed8f99f6ca5bbbac3a65167bbe075d144d5e442216c7fe77.jpg'. From the chapter-06 source archive.",
+          "archiveNote": "A screenshot of a Facebook post showing a user updating their profile picture to a solid red circle. Standard Facebook UI is visible — 'updated his profile picture' header, privacy icon, time indicator (10h), and Like/Comment/Send/Share buttons with Care/Love/Sad reactions.",
+          "assetUrl": "/evidence/chapter-06/ch6-09.jpg"
+        }
+      ]
+    }
+  ]
+}

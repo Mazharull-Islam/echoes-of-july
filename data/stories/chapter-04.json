@@ -1,0 +1,132 @@
+{
+  "id": "chapter-04",
+  "title": "The Killing of Abu Sayed",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "After the violence of 15 July, the movement shifted again. The partial concession of 10 July had not been honored; the police response of 15 July had not contained the anger on the campuses. What had begun as a peaceful student campaign was now entering its most dangerous phase."
+    },
+    {
+      "id": "scene-02",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "Around noon on 16 July 2024, hundreds of students gathered at Park Mor, the open area adjacent to Gate 1 of Begum Rokeya University in Rangpur, as part of the Anti-Discrimination Student Movement. Law enforcers present at the scene first fired tear gas and sound grenades; most students retreated. Among them was Abu Sayed, an English department student and the movement's local coordinator at the university. Accounts of what happened next differ on the weapon used: Amnesty International's analysis found that police fired shotguns loaded with birdshot at close range; other contemporaneous reporting describes rubber bullets; the findings of a later tribunal describe “multiple gunshot injuries.” The accounts are recorded separately rather than collapsed into a single version."
+    },
+    {
+      "id": "scene-03",
+      "type": "choice",
+      "choice": {
+        "prompt": "Whose account would you like to follow first?",
+        "options": [
+          {
+            "id": "opt-a",
+            "label": "Abu Sayed at Park Mor",
+            "leadsTo": "scene-04a"
+          },
+          {
+            "id": "opt-b",
+            "label": "Administrative work",
+            "leadsTo": "scene-04b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-04a",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Scene at Park Mor",
+          "sourceCaption": "As reported by The Daily Star retrospective coverage of the July 2024 movement.",
+          "text": "Around noon on 16 July 2024, hundreds of students gathered at Park Mor, the open area adjacent to Gate 1 of Begum Rokeya University, Rangpur, as part of the Anti-Discrimination Student Movement. Law enforcers first fired tear gas and sound grenades; most students retreated."
+        },
+        {
+          "id": "evidence-02",
+          "type": "document",
+          "title": "“Buk petechi, guli kor”",
+          "sourceCaption": "As reported by The Daily Star retrospective coverage of the July 2024 movement.",
+          "text": "Abu Sayed, an English department student and the movement's local coordinator at Begum Rokeya University, did not retreat with the others. Witnesses at the scene describe him standing his ground with arms outstretched, facing the advancing police. The phrase associated with this stance — “Buk petechi, guli kor,” “I have bared my chest — shoot me” — is documented in contemporary reporting and is not invented framing."
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "Declared Dead at Rangpur Medical College Hospital",
+          "sourceCaption": "As reported by The Daily Star retrospective coverage of the July 2024 movement.",
+          "text": "Abu Sayed was taken to Rangpur Medical College Hospital, where he was declared dead. He was buried the next day, 17 July 2024, in his ancestral village of Babanpur, Pirganj."
+        },
+        {
+          "id": "evidence-04",
+          "type": "photograph",
+          "title": "A student demonstrator standing in the middle of a roadway with arms outstretched",
+          "sourceCaption": "Outlet / photographer / archive credit: unknown / news footage capture. Original archive filename: `\"Abu Sayed facing police arms spread\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "A man wearing a black t-shirt and dark trousers standing alone on a paved street scattered with brickbats and footwear; his arms are extended horizontally while holding a stick. In the background, a road median with small planted trees and several individuals gathered near a building structure. Photographed 16 July 2024 near Begum Rokeya University, Rangpur.",
+          "assetUrl": "/evidence/chapter-04/ch4-04.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "photograph",
+          "title": "Portrait of Abu Sayed wearing a Bangladesh-flag headband",
+          "sourceCaption": "Outlet / photographer / archive credit: unknown. Original archive filename: `\"Abu Sayed portrait with flag headband\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "archiveNote": "A medium close-up of a young man wearing eyeglasses, a full beard, a checkered button-up shirt, and a green headband with a red circle. He is holding a white pole with the Bangladesh flag attached, set against an outdoor background of trees, a paved path, and a parked vehicle. Date: July 2024 (exact date unknown). Location: Begum Rokeya University campus, Rangpur.",
+          "assetUrl": "/evidence/chapter-04/ch4-03.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "video",
+          "title": "The Park Mor Video",
+          "sourceCaption": "Titled in the source archive as 'abu_sayed.mp4'. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-04/abu_sayed.mp4"
+        }
+      ]
+    },
+    {
+      "id": "scene-04b",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "Amnesty International's Findings",
+          "sourceCaption": "Amnesty International, investigation into the use of lethal force during the July 2024 Bangladesh protests.",
+          "text": "Amnesty International's analysis found that police fired shotguns loaded with birdshot at close range. Other contemporaneous reporting describes rubber bullets. The two accounts describe the same lethal-force incident at Park Mor but differ on the specific weapon."
+        },
+        {
+          "id": "evidence-02",
+          "type": "document",
+          "title": "The Tribunal's Findings",
+          "sourceCaption": "Findings of the tribunal investigating the killing of Abu Sayed, as cited in reporting on the case.",
+          "text": "The tribunal's findings describe “multiple gunshot injuries,” and the body of findings found no lawful or proportionate justification for the use of lethal force, rejecting claims that the killing occurred during an armed confrontation."
+        },
+        {
+          "id": "evidence-03",
+          "type": "document",
+          "title": "A Widely Circulated Video, and What It Became",
+          "sourceCaption": "Cross-referenced from the Wikipedia article 'Killing of Abu Sayed,' used here as a secondary check rather than a primary source.",
+          "text": "The events at Park Mor were captured on a widely circulated video. The recording, and the stance Abu Sayed is described as taking in it, became a defining symbol of the July 2024 uprising."
+        },
+        {
+          "id": "evidence-04",
+          "type": "newspaper",
+          "title": "Swadesh Pratidin — \"নিজেদের রাজাকার বলতে তাদের লজ্জাও করে না — প্রধানমন্ত্রী শেখ হাসিনা\"",
+          "sourceCaption": "Titled in the source archive as `\"PM remarks on slogans\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Swadesh Pratidin.",
+          "archiveNote": "Front-page print newspaper clipping featuring a prominent Bengali headline, publication metadata header (16-Jul-24), a portrait photograph of Sheikh Hasina, and multi-column article text. Published 16 July 2024.",
+          "text": "Swadesh Pratidin's 16 July 2024 front-page reporting documents Prime Minister Sheikh Hasina's public remarks regarding slogans used during the student demonstrations. The article captures the political backdrop to the mid-July escalations on the day of Abu Sayed's killing in Rangpur.",
+          "assetUrl": "/evidence/chapter-04/ch4-01.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "newspaper",
+          "title": "The Daily Samoyer Alo — \"ঢাবিতে আতঙ্কে হল ছাড়ছেন শিক্ষার্থীরা\"",
+          "sourceCaption": "Titled in the source archive as `\"DU students leaving dormitories in panic\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: The Daily Samoyer Alo.",
+          "archiveNote": "Digital newspaper section featuring publication header details, large main headline and sub-headline in Bengali, followed by structured two-column reportage text. Published 16 July 2024.",
+          "text": "The Daily Samoyer Alo's 16 July 2024 reporting documents residential students leaving Dhaka University halls of residence due to mounting safety concerns and panic following campus violent incidents, alongside updates on protest activities at Jagannath University. The coverage captures the campus-wide fear environment on the day of Abu Sayed's killing in Rangpur.",
+          "assetUrl": "/evidence/chapter-04/ch4-02.jpg"
+        }
+      ]
+    }
+  ]
+}
