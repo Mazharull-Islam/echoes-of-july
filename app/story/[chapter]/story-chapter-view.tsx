@@ -1,6 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
@@ -12,8 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { MetadataRail } from "@/components/metadata-rail";
-import { ResumeDialog } from "@/components/resume-dialog";
 import {
   clearProgress,
   loadProgress,
@@ -42,12 +39,6 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
     firstSceneId
   );
   const [choiceHistory, setChoiceHistory] = useState<string[]>([]);
-  const [resumeDialogOpen, setResumeDialogOpen] = useState(false);
-  const [pendingResume, setPendingResume] = useState<{
-    sceneId: string;
-    choiceHistory: string[];
-    sceneNumber: number;
-  } | null>(null);
 
   const currentScene = useMemo(
     () =>
@@ -76,36 +67,15 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
     if (clampedOffset === 0 && saved.choiceHistory.length === 0) {
       return;
     }
-    // Open the styled ResumeDialog so the reader can decide. We defer the
-    // actual scene jump until they pick Resume; Start over / dismiss leaves
-    // them at the first scene.
-    setPendingResume({
-      sceneId: scenes[clampedOffset].id,
-      choiceHistory: saved.choiceHistory,
-      sceneNumber: clampedOffset + 1,
-    });
-    setResumeDialogOpen(true);
-  }, [chapter, totalScenes, firstSceneId, scenes]);
-
-  function handleResume() {
-    if (pendingResume) {
-      setCurrentSceneId(pendingResume.sceneId);
-      setChoiceHistory(pendingResume.choiceHistory);
+    const wantsToResume =
+      typeof window !== "undefined" &&
+      typeof window.confirm === "function" &&
+      window.confirm(`Resume from scene ${clampedOffset + 1} of ${totalScenes}?`);
+    if (wantsToResume) {
+      setCurrentSceneId(scenes[clampedOffset].id);
+      setChoiceHistory(saved.choiceHistory);
     }
-    setResumeDialogOpen(false);
-    setPendingResume(null);
-  }
-
-  function handleStartOver() {
-    setResumeDialogOpen(false);
-    setPendingResume(null);
-  }
-
-  function handleResumeDismiss() {
-    // Backdrop click or Escape — same as Start over from a state standpoint.
-    setResumeDialogOpen(false);
-    setPendingResume(null);
-  }
+  }, [chapter, totalScenes, firstSceneId, scenes]);
 
   useEffect(() => {
     if (!hasHydratedRef.current || !currentSceneId) {
@@ -160,105 +130,61 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
     goToSceneById(leadsTo);
   }
 
-  const currentSceneIndex = scenes.findIndex(
-    (scene) => scene.id === currentSceneId
-  );
-  const currentSceneNumber = currentSceneIndex + 1;
-
-  const reduced = useReducedMotion();
+  const currentSceneNumber =
+    scenes.findIndex((scene) => scene.id === currentSceneId) + 1;
 
   return (
-    <section className="mx-auto flex w-full max-w-3xl flex-col gap-4 sm:gap-6 lg:grid lg:grid-cols-[auto_1fr] lg:items-start lg:gap-x-8">
-      <MetadataRail
-        chapterId={chapter}
-        sceneIndex={currentSceneIndex}
-        totalScenes={totalScenes}
-        className="hidden lg:flex"
-      />
-
-      <div className="flex min-w-0 flex-col gap-4 sm:gap-6">
-        {/* Compact metadata line on smaller viewports — the rail above
-            handles it on lg+. */}
-        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-mist lg:hidden">
-          {formatChapterId(chapter)} · Scene {currentSceneNumber} of{" "}
-          {totalScenes}
+    <section className="mx-auto flex w-full max-w-2xl flex-col gap-4 sm:gap-6">
+      <header className="flex flex-col gap-1 text-center sm:text-left">
+        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          {story.title}
+        </h1>
+        <p className="font-mono text-xs text-muted-foreground">
+          Scene {currentSceneNumber} of {totalScenes}
         </p>
-        <header className="flex flex-col gap-1 text-center sm:text-left">
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            {story.title}
-          </h1>
-        </header>
+      </header>
 
-        <Card className="w-full">
-          <CardHeader>
-            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-              {isChoiceScene
-                ? "A moment of reflection"
-                : isEvidenceScene
-                  ? "Evidence"
-                  : (currentScene.speaker ?? "Narrator")}
-            </p>
-            <CardTitle>{story.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.div
-                key={currentSceneId ?? "none"}
-                initial={reduced ? false : { opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={reduced ? undefined : { opacity: 0 }}
-                transition={{ duration: reduced ? 0 : 0.2, ease: "easeOut" }}
-              >
-                {isChoiceScene ? (
-                  <ChoiceScene
-                    prompt={currentScene.choice?.prompt ?? ""}
-                    options={currentScene.choice?.options ?? []}
-                    onChoose={handleChoice}
-                  />
-                ) : isEvidenceScene ? (
-                  <EvidenceList items={currentScene.evidence ?? []} />
-                ) : (
-                  <DialogueScene
-                    speaker={currentScene.speaker}
-                    dialogue={currentScene.dialogue}
-                  />
-                )}
-              </motion.div>
-            </AnimatePresence>
-          </CardContent>
-          {!isChoiceScene ? (
-            <CardFooter className="justify-end">
-              <button
-                type="button"
-                onClick={handleContinue}
-                className={cn(
-                  buttonVariants({ variant: "default", size: "default" })
-                )}
-              >
-                {isAtChapterEnd ? "Continue to reflection" : "Continue"}
-              </button>
-            </CardFooter>
-          ) : null}
-        </Card>
-      </div>
-
-      <ResumeDialog
-        open={resumeDialogOpen}
-        scenePosition={
-          pendingResume
-            ? `Scene ${pendingResume.sceneNumber} of ${totalScenes}`
-            : `Scene 1 of ${totalScenes}`
-        }
-        onResume={handleResume}
-        onStartOver={handleStartOver}
-        onDismiss={handleResumeDismiss}
-      />
+      <Card className="w-full">
+        <CardHeader>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+            {isChoiceScene
+              ? "A moment of reflection"
+              : isEvidenceScene
+                ? "Evidence"
+                : (currentScene.speaker ?? "Narrator")}
+          </p>
+          <CardTitle>{story.title}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          {isChoiceScene ? (
+            <ChoiceScene
+              prompt={currentScene.choice?.prompt ?? ""}
+              options={currentScene.choice?.options ?? []}
+              onChoose={handleChoice}
+            />
+          ) : isEvidenceScene ? (
+            <EvidenceList items={currentScene.evidence ?? []} />
+          ) : (
+            <DialogueScene
+              speaker={currentScene.speaker}
+              dialogue={currentScene.dialogue}
+            />
+          )}
+        </CardContent>
+        {!isChoiceScene ? (
+          <CardFooter className="justify-end">
+            <button
+              type="button"
+              onClick={handleContinue}
+              className={cn(
+                buttonVariants({ variant: "default", size: "default" })
+              )}
+            >
+              {isAtChapterEnd ? "Continue to reflection" : "Continue"}
+            </button>
+          </CardFooter>
+        ) : null}
+      </Card>
     </section>
   );
-}
-
-function formatChapterId(raw: string): string {
-  const trimmed = raw.replace(/^chapter[-_]?/i, "");
-  const padded = trimmed.padStart(2, "0");
-  return `Chapter-${padded}`.toUpperCase();
 }
