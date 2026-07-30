@@ -1,17 +1,17 @@
 [
   {
-    "id": "chapter-02",
-    "date": "10 July 2024",
-    "title": "Escalating Resistance",
-    "summary": "From 7 to 10 July 2024, students carry out the \u201cBangla Blockade,\u201d blocking major highways, railways, and intersections nationwide, including Shahbagh in Dhaka. On 10 July, the Supreme Court temporarily suspends the quota ruling for one month while the Rapid Action Battalion is deployed alongside police, and on 11 July police announce they will act against the blockades.",
-    "chapter": "chapter-02"
-  },
-  {
     "id": "chapter-01",
     "date": "1 July 2024",
     "title": "The Catalyst for the July Revolution",
     "summary": "The High Court's reinstatement of the government-job quota brings students back to campus in peaceful protest, while teachers at dozens of universities are already on strike over their pensions.",
     "chapter": "chapter-01"
+  },
+  {
+    "id": "chapter-02",
+    "date": "10 July 2024",
+    "title": "Escalating Resistance",
+    "summary": "From 7 to 10 July 2024, students carry out the “Bangla Blockade,” blocking major highways, railways, and intersections nationwide, including Shahbagh in Dhaka. On 10 July, the Supreme Court temporarily suspends the quota ruling for one month while the Rapid Action Battalion is deployed alongside police, and on 11 July police announce they will act against the blockades.",
+    "chapter": "chapter-02"
   },
   {
     "id": "chapter-03",
@@ -32,13 +32,15 @@
     "date": "18–21 July 2024",
     "title": "Total Shutdown, 18–21 July 2024",
     "summary": "On 18 July, the government declares a nationwide curfew and cuts mobile internet and broadband; the army, the Rapid Action Battalion, and the Border Guard Bangladesh are deployed under curfew order described in reporting as shoot-on-sight. The disconnection, which runs for several days, severely limits verification of casualty figures reported on 19 and 20 July. On 21 July, the Supreme Court scales back the quota system by restoring the 2018 circular (93 percent of posts on merit, 5 percent reserved for the children of freedom fighters, and 1 percent each for three other categories); the curfew eases and mobile internet is restored in stages beginning around 23 July, with reporting describing a relative calm in the days after the ruling.",
-    "chapter": "chapter-05"  },
+    "chapter": "chapter-05"
+  },
   {
     "id": "chapter-06",
     "date": "26 July – 3 August 2024",
     "title": "Detentions, Red Profiles, and the One-Point Demand",
     "summary": "From 26 July 2024, protest coordinators Nahid Islam, Asif Mahmud, and Abu Bakar Majumder are taken into custody by plainclothes police from Gonoshasthaya Nagar Hospital in Dhaka, followed within two days by Sarjis Alam, Hasnat Abdullah, and Nusrat Tabassum; the Home Minister later says the coordinators had been taken into \"custody for their safety.\" On 28 July, while in police custody, the coordinators release a video declaring an end to the protests; other protest leaders and observers widely allege the statement was coerced and scripted under duress, and that characterization is contested rather than settled. Mass-arrest figures vary widely: one Dhaka-based rights group cites 3,000+ arrested in Dhaka alone by 29 July, while broader nationwide tallies put the number between roughly 10,000 and 11,700 across the full protest period. On 29–30 July, the Red Profile movement emerges as coordinators urge people to cover their faces with red cloth and turn their social-media profile pictures red in protest against the government's declared national day of mourning. On 31 July, the student movement holds \"March for Justice\" protests at courts, campuses, and streets in Dhaka and other major cities. On 3 August, coordinators of Students Against Discrimination announce a \"one-point demand\" — the resignation of Prime Minister Sheikh Hasina and her cabinet — at a mass rally at Central Shaheed Minar, Dhaka, rejecting Hasina's offer of talks at Ganabhaban, and announce a \"non-cooperation movement\" beginning the next day.",
-    "chapter": "chapter-06"  },
+    "chapter": "chapter-06"
+  },
   {
     "id": "chapter-07",
     "date": "4–5 August 2024",

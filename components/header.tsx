@@ -11,7 +11,6 @@ type NavLink = {
 const NAV_LINKS: ReadonlyArray<NavLink> = [
   { href: "/", label: "Home" },
   { href: "/timeline", label: "Timeline" },
-  { href: "/reflection", label: "Reflection" },
 ];
 
 export function Header({ className }: { className?: string }) {
