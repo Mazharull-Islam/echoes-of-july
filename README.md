@@ -91,7 +91,7 @@ Relive seven pivotal days of July 2024 through a narrative web experience built 
 | | |
 |---|---|
 | 👨‍💻 **Mazharul Islam** | GitHub: [@Mazharull-Islam](https://github.com/Mazharull-Islam) · Repo owner |
-| 👨‍💻 **Nafiz Shahriar Sami** | Contributor |
+| 👨‍💻 **Nafiz Shahriar Sami** | GitHub: [@Nafiz-codes](https://github.com/Nafiz-codes) · Contributor |
 
 ---
 
@@ -295,6 +295,9 @@ docs/                   # Design + ADRs + permissions
     <td align="center" width="50%">
       <h3>👨‍💻 Nafiz Shahriar Sami</h3>
       <p><em>Contributor</em></p>
+      <a href="https://github.com/Nafiz-codes" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/GitHub-Nafiz--codes-181717?style=for-the-badge&logo=github&logoColor=white" alt="Nafiz Shahriar Sami" />
+      </a>
     </td>
   </tr>
 </table>
