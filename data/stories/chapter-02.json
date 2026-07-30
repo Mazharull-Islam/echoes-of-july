@@ -1,16 +1,147 @@
 {
   "id": "chapter-02",
-  "title": "The Beginning",
+  "title": "Escalating Resistance",
   "scenes": [
     {
-      "id": "scene-1",
+      "id": "scene-01",
+      "type": "dialogue",
       "speaker": "Narrator",
-      "dialogue": "The protest began early in the morning."
+      "dialogue": "In the days after the July 1 protests began, students intensified their campaign. From July 7 to 10, 2024, thousands of students carried out the “Bangla Blockade” — boycotting classes and blocking major highways, railways, and key intersections across the country, including Shahbagh in Dhaka, bringing city traffic close to a standstill."
     },
     {
-      "id": "scene-2",
-      "speaker": "Student",
-      "dialogue": "We gathered outside the campus."
+      "id": "scene-02",
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "On July 10, 2024, the Supreme Court temporarily suspended the quota ruling for one month, following legal petitions — a partial concession. On the same day, the Rapid Action Battalion, a paramilitary force previously accused of serious human rights violations, was deployed alongside police to help contain the protests. The state was offering a concession and hardening its response at the same time."
+    },
+    {
+      "id": "scene-03",
+      "type": "choice",
+      "choice": {
+        "prompt": "Whose account would you like to follow first?",
+        "options": [
+          {
+            "id": "opt-a",
+            "label": "Student's Unity",
+            "leadsTo": "scene-04a"
+          },
+          {
+            "id": "opt-b",
+            "label": "Barbarity of the Administration",
+            "leadsTo": "scene-04b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scene-04a",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "The Bangla Blockade",
+          "sourceCaption": "European Union Agency for Asylum (EUAA), Bangladesh Country Focus Country of Origin Information Report, August 2025, “7–10 July 2024” section, citing local media reporting.",
+          "text": "Thousands of students boycotted classes and blocked major highways, railways, and intersections nationwide from July 7 to 10, 2024, including Shahbagh in Dhaka, causing severe disruption to traffic for several days running."
+        },
+        {
+          "id": "evidence-02",
+          "type": "photograph",
+          "title": "3 July — a protest begins",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/unity/unity-01.jpg"
+        },
+        {
+          "id": "evidence-03",
+          "type": "photograph",
+          "title": "Students fighting for their rights",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/unity/unity-02.jpg"
+        },
+        {
+          "id": "evidence-04",
+          "type": "photograph",
+          "title": "Students gathering from across the country",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/unity/unity-03.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "photograph",
+          "title": "Students protesting in Mymensingh",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/unity/unity-04.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "photograph",
+          "title": "An ultimatum",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/unity/unity-05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scene-04b",
+      "type": "evidence",
+      "evidence": [
+        {
+          "id": "evidence-01",
+          "type": "document",
+          "title": "Concession and Escalation",
+          "sourceCaption": "European Union Agency for Asylum (EUAA), Bangladesh Country Focus Country of Origin Information Report, August 2025, “7–10 July 2024” and “11–13 July 2024” sections.",
+          "text": "On July 10, 2024, the Supreme Court temporarily suspended the quota ruling for one month following legal petitions, and the Rapid Action Battalion — a paramilitary force previously accused of serious human rights violations — was deployed alongside police that same day. By July 11, police announced they would act against road blockades, arguing the suspension removed justification to continue, though tens of thousands of protesters defied this and kept blocking roads."
+        },
+        {
+          "id": "evidence-02",
+          "type": "photograph",
+          "title": "Innocent BSL",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-01.jpg"
+        },
+        {
+          "id": "evidence-03",
+          "type": "photograph",
+          "title": "Our protectors",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-02.jpeg"
+        },
+        {
+          "id": "evidence-04",
+          "type": "photograph",
+          "title": "BSL barbarity",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-03.jpg"
+        },
+        {
+          "id": "evidence-05",
+          "type": "photograph",
+          "title": "Everyone is deceiving",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-04.jpg"
+        },
+        {
+          "id": "evidence-06",
+          "type": "photograph",
+          "title": "Fascist",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-05.jpg"
+        },
+        {
+          "id": "evidence-07",
+          "type": "photograph",
+          "title": "Propaganda",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-06.jpg"
+        },
+        {
+          "id": "evidence-08",
+          "type": "photograph",
+          "title": "When everything slips, blame the outsider",
+          "sourceCaption": "From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md.",
+          "assetUrl": "/evidence/chapter-02/barbarity/barbarity-07.jpg"
+        }
+      ]
     }
   ]
 }

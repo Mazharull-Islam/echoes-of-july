@@ -3,11 +3,9 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -16,10 +14,11 @@ import {
   loadProgress,
   saveProgress,
 } from "@/lib/save-system";
-import { cn } from "@/lib/utils";
 import type { Story } from "@/types/story";
 
 import { EvidenceList } from "./evidence-list";
+import { ResumePromptDialog } from "./resume-prompt-dialog";
+import { SceneFooter } from "./scene-footer";
 import { ChoiceScene, DialogueScene } from "./scene-views";
 import { effectiveSceneType, resolveNextSceneId } from "./story-helpers";
 
@@ -35,10 +34,11 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
   const firstSceneId = scenes[0]?.id ?? null;
   const hasHydratedRef = useRef(false);
 
-  const [currentSceneId, setCurrentSceneId] = useState<string | null>(
-    firstSceneId
-  );
+  const [currentSceneId, setCurrentSceneId] = useState<string | null>(firstSceneId);
   const [choiceHistory, setChoiceHistory] = useState<string[]>([]);
+  const [returnToChoiceSceneId, setReturnToChoiceSceneId] = useState<string | null>(null);
+  const [previousSceneId, setPreviousSceneId] = useState<string | null>(null);
+  const [resumePrompt, setResumePrompt] = useState<{ sceneId: string; history: string[]; sceneNumber: number } | null>(null);
 
   const currentScene = useMemo(
     () =>
@@ -49,69 +49,59 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
   );
 
   useEffect(() => {
-    if (hasHydratedRef.current) {
-      return;
-    }
+    if (hasHydratedRef.current) return;
     hasHydratedRef.current = true;
-    if (totalScenes === 0 || !firstSceneId) {
-      return;
-    }
+    if (totalScenes === 0 || !firstSceneId) return;
     const saved = loadProgress(chapter);
-    if (!saved) {
-      return;
-    }
-    const clampedOffset = Math.min(
-      Math.max(saved.sceneIndex, 0),
-      totalScenes - 1
-    );
-    if (clampedOffset === 0 && saved.choiceHistory.length === 0) {
-      return;
-    }
-    const wantsToResume =
-      typeof window !== "undefined" &&
-      typeof window.confirm === "function" &&
-      window.confirm(`Resume from scene ${clampedOffset + 1} of ${totalScenes}?`);
-    if (wantsToResume) {
-      setCurrentSceneId(scenes[clampedOffset].id);
-      setChoiceHistory(saved.choiceHistory);
-    }
+    if (!saved) return;
+    const clampedOffset = Math.min(Math.max(saved.sceneIndex, 0), totalScenes - 1);
+    if (clampedOffset === 0 && saved.choiceHistory.length === 0) return;
+    setResumePrompt({
+      sceneId: scenes[clampedOffset].id,
+      history: saved.choiceHistory,
+      sceneNumber: clampedOffset + 1,
+    });
   }, [chapter, totalScenes, firstSceneId, scenes]);
 
+  function handleResume() {
+    if (!resumePrompt) return;
+    setCurrentSceneId(resumePrompt.sceneId);
+    setChoiceHistory(resumePrompt.history);
+    setResumePrompt(null);
+  }
+
+  function handleStartOver() {
+    clearProgress(chapter);
+    setResumePrompt(null);
+  }
+
   useEffect(() => {
-    if (!hasHydratedRef.current || !currentSceneId) {
-      return;
-    }
+    if (!hasHydratedRef.current || !currentSceneId) return;
     const offset = scenes.findIndex((scene) => scene.id === currentSceneId);
-    if (offset >= 0) {
-      saveProgress(chapter, offset, choiceHistory);
-    }
+    if (offset >= 0) saveProgress(chapter, offset, choiceHistory);
   }, [chapter, scenes, currentSceneId, choiceHistory]);
 
   const goToSceneById = useCallback((sceneId: string) => {
-    setCurrentSceneId(sceneId);
+    setCurrentSceneId((prev) => {
+      if (prev) setPreviousSceneId(prev);
+      return sceneId;
+    });
   }, []);
 
   if (totalScenes === 0 || !currentScene) {
     return (
       <section className="mx-auto flex w-full max-w-2xl flex-col items-center gap-4 text-center">
         <h1 className="text-2xl font-semibold tracking-tight">{story.title}</h1>
-        <p className="text-sm text-muted-foreground">
-          No scenes available for this chapter yet.
-        </p>
+        <p className="text-sm text-muted-foreground">No scenes available for this chapter yet.</p>
       </section>
     );
   }
 
   const sceneType = effectiveSceneType(currentScene);
   const isChoiceScene = sceneType === "choice" && !!currentScene.choice;
-  const isEvidenceScene =
-    sceneType === "evidence" &&
-    Array.isArray(currentScene.evidence) &&
-    currentScene.evidence.length > 0;
+  const isEvidenceScene = sceneType === "evidence" && Array.isArray(currentScene.evidence) && currentScene.evidence.length > 0;
 
-  const nextSceneId = isChoiceScene
-    ? null
-    : resolveNextSceneId(scenes, currentScene, null);
+  const nextSceneId = isChoiceScene ? null : returnToChoiceSceneId ?? resolveNextSceneId(scenes, currentScene, null);
   const isAtChapterEnd = nextSceneId === null;
 
   function handleContinue() {
@@ -120,18 +110,29 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
       router.push(`/reflection/${chapter}`);
       return;
     }
-    if (nextSceneId) {
-      setCurrentSceneId(nextSceneId);
-    }
+    if (!nextSceneId) return;
+    if (returnToChoiceSceneId && nextSceneId === returnToChoiceSceneId) setReturnToChoiceSceneId(null);
+    goToSceneById(nextSceneId);
   }
 
   function handleChoice(optionId: string, label: string, leadsTo: string) {
     setChoiceHistory((prev) => [...prev, `${optionId}:${label}`]);
+    setReturnToChoiceSceneId(currentSceneId);
     goToSceneById(leadsTo);
   }
 
-  const currentSceneNumber =
-    scenes.findIndex((scene) => scene.id === currentSceneId) + 1;
+  function handleBack() {
+    if (!previousSceneId) return;
+    const target = previousSceneId;
+    setPreviousSceneId(currentSceneId);
+    setCurrentSceneId(target);
+  }
+
+  function handleTimeline() {
+    router.push("/timeline");
+  }
+
+  const currentSceneNumber = scenes.findIndex((scene) => scene.id === currentSceneId) + 1;
 
   return (
     <section className="mx-auto flex w-full max-w-2xl flex-col gap-4 sm:gap-6">
@@ -171,20 +172,25 @@ export function StoryChapterView({ chapter, story }: StoryChapterViewProps) {
             />
           )}
         </CardContent>
-        {!isChoiceScene ? (
-          <CardFooter className="justify-end">
-            <button
-              type="button"
-              onClick={handleContinue}
-              className={cn(
-                buttonVariants({ variant: "default", size: "default" })
-              )}
-            >
-              {isAtChapterEnd ? "Continue to reflection" : "Continue"}
-            </button>
-          </CardFooter>
-        ) : null}
+        <SceneFooter
+          isChoiceScene={isChoiceScene}
+          isAtChapterEnd={isAtChapterEnd}
+          previousSceneId={previousSceneId}
+          onBack={handleBack}
+          onContinue={handleContinue}
+          onTimeline={handleTimeline}
+        />
       </Card>
+      <ResumePromptDialog
+        open={resumePrompt !== null}
+        sceneNumber={resumePrompt?.sceneNumber ?? null}
+        totalScenes={totalScenes}
+        onResume={handleResume}
+        onStartOver={handleStartOver}
+        onOpenChange={(open) => {
+          if (!open) setResumePrompt(null);
+        }}
+      />
     </section>
   );
 }
