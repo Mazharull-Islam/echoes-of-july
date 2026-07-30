@@ -18,17 +18,30 @@ type LandingContinueProps = {
 
 export function LandingContinue({ chapterIds }: LandingContinueProps) {
   const [resume, setResume] = useState<ResumeProgress | null>(null);
+  const [resolved, setResolved] = useState(false);
 
   // localStorage is unavailable on the server and may be unavailable on the
   // client (private browsing, disabled storage). Defer the lookup until after
-  // mount so SSR renders the no-save baseline and the Continue affordance
-  // appears only when a real save is found.
+  // mount so SSR renders the loading baseline, then mark resolved once the
+  // lookup finishes (whether a save was found or not).
   useEffect(() => {
     const found = findResumeProgress(chapterIds);
     if (found) {
       setResume(found);
     }
+    setResolved(true);
   }, [chapterIds]);
+
+  if (!resolved) {
+    return (
+      <p
+        className="font-mono text-xs uppercase tracking-wide text-muted-foreground"
+        aria-live="polite"
+      >
+        Checking for saved progress…
+      </p>
+    );
+  }
 
   if (!resume) {
     return null;

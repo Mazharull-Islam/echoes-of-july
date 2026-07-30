@@ -16,7 +16,7 @@ import { loadProgress } from "@/lib/save-system";
 import { cn } from "@/lib/utils";
 
 type ReflectionChapterViewProps = {
-  chapter: string;
+  chapter: string
 };
 
 // PLACEHOLDER / DRAFT — final reflective wording is pending product-owner
@@ -30,13 +30,16 @@ const PLACEHOLDER_PROMPTS: ReadonlyArray<string> = [
 export function ReflectionChapterView({ chapter }: ReflectionChapterViewProps) {
   const [choiceLabels, setChoiceLabels] = useState<string[] | null>(null);
   const [hasSave, setHasSave] = useState(false);
+  const [resolved, setResolved] = useState(false);
 
   // localStorage is unavailable on the server and may be unavailable on the
-  // client. Defer the lookup until after mount so SSR shows the no-save
-  // baseline cleanly.
+  // client. Defer the lookup until after mount so SSR shows the loading
+  // baseline cleanly, then mark resolved once the lookup finishes (whether
+  // a save was found or not).
   useEffect(() => {
     const saved = loadProgress(chapter);
     if (!saved) {
+      setResolved(true);
       return;
     }
     setHasSave(true);
@@ -50,6 +53,7 @@ export function ReflectionChapterView({ chapter }: ReflectionChapterViewProps) {
         })
         .filter((label) => label.length > 0)
     );
+    setResolved(true);
   }, [chapter]);
 
   return (
@@ -63,79 +67,92 @@ export function ReflectionChapterView({ chapter }: ReflectionChapterViewProps) {
         </p>
       </header>
 
-      <Card className="w-full">
-        <CardHeader>
-          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            Your path through this chapter
-          </p>
-          <CardTitle>What you chose</CardTitle>
-          <CardDescription>
-            {hasSave && choiceLabels && choiceLabels.length > 0
-              ? `You followed ${choiceLabels.length} ${choiceLabels.length === 1 ? "choice" : "choices"} in this chapter.`
-              : "You moved through this chapter without a recorded choice."}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {hasSave && choiceLabels && choiceLabels.length > 0 ? (
-            <ul className="flex flex-col gap-2 text-sm sm:text-base" role="list">
-              {choiceLabels.map((label, index) => (
+      {!resolved ? (
+        <p
+          className="font-mono text-xs uppercase tracking-wide text-muted-foreground"
+          aria-live="polite"
+        >
+          Loading saved choices…
+        </p>
+      ) : null}
+
+      {resolved ? (
+        <Card className="w-full">
+          <CardHeader>
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Your path through this chapter
+            </p>
+            <CardTitle>What you chose</CardTitle>
+            <CardDescription>
+              {hasSave && choiceLabels && choiceLabels.length > 0
+                ? `You followed ${choiceLabels.length} ${choiceLabels.length === 1 ? "choice" : "choices"} in this chapter.`
+                : "You haven't played this chapter yet — start it from the timeline to record choices and unlock reflections."}
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            {hasSave && choiceLabels && choiceLabels.length > 0 ? (
+              <ul className="flex flex-col gap-2 text-sm sm:text-base" role="list">
+                {choiceLabels.map((label, index) => (
+                  <li
+                    key={`${index}-${label}`}
+                    className="rounded-md border border-dashed border-border/70 px-3 py-2 text-muted-foreground"
+                  >
+                    {label}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-muted-foreground sm:text-base">
+                No recorded choices for this chapter — once a playthrough
+                saves progress, your path will appear here.
+              </p>
+            )}
+          </CardContent>
+        </Card>
+      ) : null}
+
+      {resolved ? (
+        <Card className="w-full">
+          <CardHeader>
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Questions to sit with
+            </p>
+            <CardTitle>Reflection prompts</CardTitle>
+            <CardDescription>
+              There are no right answers here. Sit with whichever question feels
+              most present.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul className="flex flex-col gap-3" role="list">
+              {PLACEHOLDER_PROMPTS.map((prompt, index) => (
                 <li
-                  key={`${index}-${label}`}
-                  className="rounded-md border border-dashed border-border/70 px-3 py-2 text-muted-foreground"
+                  key={`prompt-${index}`}
+                  className="rounded-md bg-muted/40 px-3 py-2 text-base leading-relaxed sm:px-4 sm:py-3 sm:text-lg"
                 >
-                  {label}
+                  {prompt}
                 </li>
               ))}
             </ul>
-          ) : (
-            <p className="text-sm text-muted-foreground sm:text-base">
-              No recorded choices for this chapter — this page will surface
-              them automatically once a playthrough saves progress.
-            </p>
-          )}
-        </CardContent>
-      </Card>
-
-      <Card className="w-full">
-        <CardHeader>
-          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            Questions to sit with
-          </p>
-          <CardTitle>Reflection prompts</CardTitle>
-          <CardDescription>
-            There are no right answers here. Sit with whichever question feels
-            most present.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <ul className="flex flex-col gap-3" role="list">
-            {PLACEHOLDER_PROMPTS.map((prompt, index) => (
-              <li
-                key={`prompt-${index}`}
-                className="rounded-md bg-muted/40 px-3 py-2 text-base leading-relaxed sm:px-4 sm:py-3 sm:text-lg"
-              >
-                {prompt}
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-        <CardFooter className="flex flex-wrap items-center justify-end gap-2">
-          <Link
-            href="/timeline"
-            className={cn(
-              buttonVariants({ variant: "outline", size: "default" })
-            )}
-          >
-            Return to timeline
-          </Link>
-          <Link
-            href={`/history/${chapter}`}
-            className={cn(buttonVariants({ variant: "default", size: "default" }))}
-          >
-            Read further context
-          </Link>
-        </CardFooter>
-      </Card>
+          </CardContent>
+          <CardFooter className="flex flex-wrap items-center justify-end gap-2">
+            <Link
+              href="/timeline"
+              className={cn(
+                buttonVariants({ variant: "outline", size: "default" })
+              )}
+            >
+              Return to timeline
+            </Link>
+            <Link
+              href={`/history/${chapter}`}
+              className={cn(buttonVariants({ variant: "default", size: "default" }))}
+            >
+              Read further context
+            </Link>
+          </CardFooter>
+        </Card>
+      ) : null}
     </section>
   );
 }
