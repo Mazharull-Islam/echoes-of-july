@@ -92,10 +92,11 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
-          "title": "A Parallel Dispute",
-          "sourceCaption": "European Union Agency for Asylum (EUAA), Bangladesh Country Focus Country of Origin Information Report, August 2025, \"1–3 July 2024: Initial protests\" section, citing local media reporting.",
-          "text": "Alongside the student protests, teachers at 35 public universities went on strike over changes to their pension scheme, suspending academic and administrative activities indefinitely during the same period in late June and July 2024. Some teachers were therefore engaged in a separate labor dispute with the government while the student quota protests were unfolding on their campuses."
+          "type": "photograph",
+          "title": "University Teachers' Rally at Aparajeyo Bangla, Dhaka University",
+          "sourceCaption": "DU News file coverage of the Dhaka University Teachers' Network solidarity rally, July 2024. Original archive filename: teacherPart.jpg. From the chapter-01 source archive, alongside Manab Zamin file footage of the same day's student march. Permission status: pending — academic project, no formal grant obtained.",
+          "archiveNote": "University teachers from institutions across Bangladesh united under the Dhaka University Teachers' Network to express solidarity with students participating in the quota reform movement. During a demonstration held at the foot of the Aparajeyo Bangla sculpture on the Dhaka University campus, the academics called for an immediate end to the violence, forced disappearances, mass arrests, and systemic harassment directed at student demonstrators. Observing a moment of silence to honor those killed, the educators advocated for labeling the deaths as the \"July killings\" and urged immediate accountability for all parties responsible, including law enforcement and institutional leadership.\n\nThroughout the rally, faculty members strongly criticized the government's autocratic measures and the criminalization of student dissent, characterizing the student movement as a legitimate, historic struggle against long-standing administrative and political repression in higher education. They demanded the unconditional release of detained students, the withdrawal of false charges, and a prompt restoration of an open, safe academic environment so students can safely return to their studies and the democratic process.",
+          "assetUrl": "/evidence/chapter-01/july-1-06.jpg"
         }
       ]
     }
