@@ -91,27 +91,6 @@
       "evidence": [
         {
           "id": "evidence-01",
-          "type": "document",
-          "title": "Amnesty International's Findings",
-          "sourceCaption": "Amnesty International, investigation into the use of lethal force during the July 2024 Bangladesh protests.",
-          "text": "Amnesty International's analysis found that police fired shotguns loaded with birdshot at close range. Other contemporaneous reporting describes rubber bullets. The two accounts describe the same lethal-force incident at Park Mor but differ on the specific weapon."
-        },
-        {
-          "id": "evidence-02",
-          "type": "document",
-          "title": "The Tribunal's Findings",
-          "sourceCaption": "Findings of the tribunal investigating the killing of Abu Sayed, as cited in reporting on the case.",
-          "text": "The tribunal's findings describe “multiple gunshot injuries,” and the body of findings found no lawful or proportionate justification for the use of lethal force, rejecting claims that the killing occurred during an armed confrontation."
-        },
-        {
-          "id": "evidence-03",
-          "type": "document",
-          "title": "A Widely Circulated Video, and What It Became",
-          "sourceCaption": "Cross-referenced from the Wikipedia article 'Killing of Abu Sayed,' used here as a secondary check rather than a primary source.",
-          "text": "The events at Park Mor were captured on a widely circulated video. The recording, and the stance Abu Sayed is described as taking in it, became a defining symbol of the July 2024 uprising."
-        },
-        {
-          "id": "evidence-04",
           "type": "newspaper",
           "title": "Swadesh Pratidin — \"নিজেদের রাজাকার বলতে তাদের লজ্জাও করে না — প্রধানমন্ত্রী শেখ হাসিনা\"",
           "sourceCaption": "Titled in the source archive as `\"PM remarks on slogans\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: Swadesh Pratidin.",
@@ -120,7 +99,7 @@
           "assetUrl": "/evidence/chapter-04/ch4-01.jpg"
         },
         {
-          "id": "evidence-05",
+          "id": "evidence-02",
           "type": "newspaper",
           "title": "The Daily Samoyer Alo — \"ঢাবিতে আতঙ্কে হল ছাড়ছেন শিক্ষার্থীরা\"",
           "sourceCaption": "Titled in the source archive as `\"DU students leaving dormitories in panic\".jpg`. From duniyakapanojuly.org (July-36 archive). Permission documented in docs/permissions/july-36-archive.md. Outlet / Photographer credit per source archive: The Daily Samoyer Alo.",
