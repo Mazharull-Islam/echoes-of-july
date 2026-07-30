@@ -1,63 +1,61 @@
 {
   "id": "chapter-01",
-  "title": "The Beginning",
+  "title": "The Catalyst for the July Revolution",
   "scenes": [
     {
       "id": "scene-01",
+      "type": "dialogue",
       "speaker": "Narrator",
-      "dialogue": "Placeholder dialogue for the opening scene."
+      "dialogue": "On 1 July 2024, students gathered on campuses across Bangladesh, including Dhaka University, for calm demonstrations. These protests had just resumed. At this early stage they were peaceful, a long way from the violent crackdown that would come later in July."
     },
     {
       "id": "scene-02",
-      "speaker": "Student",
-      "dialogue": "Placeholder dialogue for the second scene."
+      "type": "dialogue",
+      "speaker": "Narrator",
+      "dialogue": "The trigger sat a few weeks earlier. In June 2024, the High Court reinstated a 30 percent government-job quota reserved for descendants of freedom fighters, reversing a 2018 decision that had abolished it. In a country with high youth unemployment, students read the ruling as a narrowing of merit-based opportunities."
     },
     {
-      "id": "scene-choice-placeholder",
+      "id": "scene-03",
       "type": "choice",
       "choice": {
-        "prompt": "[PLACEHOLDER / TEST — not historical content] Which path do you follow next?",
+        "prompt": "Whose account would you like to follow first?",
         "options": [
           {
             "id": "opt-a",
-            "label": "[TEST] Continue toward the square",
-            "leadsTo": "scene-after-choice-a"
+            "label": "A student on campus that day",
+            "leadsTo": "scene-04a"
           },
           {
             "id": "opt-b",
-            "label": "[TEST] Step back and observe",
-            "leadsTo": "scene-after-choice-b"
+            "label": "A teacher watching from off campus",
+            "leadsTo": "scene-04b"
           }
         ]
       }
     },
     {
-      "id": "scene-after-choice-a",
-      "speaker": "Narrator",
-      "dialogue": "[PLACEHOLDER / TEST] Path A — placeholder dialogue."
-    },
-    {
-      "id": "scene-after-choice-b",
-      "speaker": "Narrator",
-      "dialogue": "[PLACEHOLDER / TEST] Path B — placeholder dialogue."
-    },
-    {
-      "id": "scene-evidence-placeholder",
+      "id": "scene-04a",
       "type": "evidence",
       "evidence": [
         {
-          "id": "evidence-photo-placeholder",
-          "type": "photograph",
-          "title": "[PLACEHOLDER / TEST] Photograph placeholder",
-          "sourceCaption": "[PLACEHOLDER / TEST] Illustrative stand-in image; not a real historical source.",
-          "assetUrl": "/globe.svg"
-        },
+          "id": "evidence-01",
+          "type": "newspaper",
+          "title": "A Student Joins the Movement",
+          "sourceCaption": "The Christian Science Monitor, \"Bangladeshi youth bore the brunt of last week's violent protests. They want accountability,\" published and updated 26 July 2024. Paraphrased reporting, not a direct quote.",
+          "text": "Prapti Taposhi, an economics student at Jahangirnagar University, was among the first students to join the July 2024 protests over the reinstated government job quota."
+        }
+      ]
+    },
+    {
+      "id": "scene-04b",
+      "type": "evidence",
+      "evidence": [
         {
-          "id": "evidence-witness-placeholder",
-          "type": "witness-statement",
-          "title": "[PLACEHOLDER / TEST] Witness statement placeholder",
-          "sourceCaption": "[PLACEHOLDER / TEST] Composite/illustrative; not a real account.",
-          "text": "[PLACEHOLDER / TEST] This is a placeholder witness statement used to verify the evidence scene UI. Real content will replace this once the writer's draft is fact-checked."
+          "id": "evidence-01",
+          "type": "document",
+          "title": "A Parallel Dispute",
+          "sourceCaption": "European Union Agency for Asylum (EUAA), Bangladesh Country Focus Country of Origin Information Report, August 2025, \"1–3 July 2024: Initial protests\" section, citing local media reporting.",
+          "text": "Alongside the student protests, teachers at 35 public universities went on strike over changes to their pension scheme, suspending academic and administrative activities indefinitely during the same period in late June and July 2024. Some teachers were therefore engaged in a separate labor dispute with the government while the student quota protests were unfolding on their campuses."
         }
       ]
     }

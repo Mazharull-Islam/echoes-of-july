@@ -1,16 +1,16 @@
 [
   {
-    "id": "chapter-01",
-    "date": "16 July 2024",
-    "title": "The Beginning",
-    "summary": "Students begin protesting.",
-    "chapter": "chapter-01"
-  },
-  {
     "id": "chapter-02",
     "date": "18 July 2024",
     "title": "Escalation",
     "summary": "Placeholder summary.",
     "chapter": "chapter-02"
+  },
+  {
+    "id": "chapter-01",
+    "date": "1 July 2024",
+    "title": "The Catalyst for the July Revolution",
+    "summary": "The High Court's reinstatement of the government-job quota brings students back to campus in peaceful protest, while teachers at dozens of universities are already on strike over their pensions.",
+    "chapter": "chapter-01"
   }
 ]
